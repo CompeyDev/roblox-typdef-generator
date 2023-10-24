@@ -37,7 +37,7 @@ function download_dump(): string
 
 	logger.info(TARGET, `Successfully downloaded dump file to {dump_path}!`)
 
-	-- Hardcoded just max's client tracker had a breaking change
+	-- Hardcoded cuz max's client tracker had a breaking change
 	return parse_dump("dumps/dump_0x8317d.txt")
 end
 
@@ -75,7 +75,7 @@ function parse_dump(path: string)
 
 					inner = tag
 				else
-					inner = tag:sub(1, #tag - 1)
+					inner = tag:sub(2, #tag - 1)
 				end
 
 				table.insert(tags, inner)
@@ -124,6 +124,14 @@ function parse_dump(path: string)
 			parent_node = class_name
 		end
 
+		if tokens[1] == "Enum" then
+			local enum_name = tokens[2]
+
+			parsed[enum_name .. `\{{tokens[1]}\}`] = {}
+
+			parent_node = enum_name
+		end
+
 		if tokens[1]:find(IDENT) then
 			local child_type = tokens[1]:gsub(IDENT, "")
 			parsed[parent_node].children = {}
@@ -133,9 +141,24 @@ function parse_dump(path: string)
 					kind = child_type,
 					type = tokens[2],
 					-- FIXME: Name is sometimes incorrect
-					name = tokens[3]:gsub(parent_node .. ".", ""),
+					name = tokens[3]:gsub(parent_node .. ".", "", 1),
 					tags = get_tags(child_type, tokens, tokens[3]),
 				})
+			end
+
+			if child_type == "EnumItem" then
+				-- [1] => name
+				-- [2] => always ":"
+				-- [3] => position
+				local sub_tokens = { table.unpack(tokens, 2, 4) }
+				local name = sub_tokens[1]:gsub(parent_node .. ".", 1)
+
+				if sub_tokens[2] ~= ":" then
+					logger.error(TARGET, `Expected delim \`:\` between enum item and position for enum {name}`)
+					process.exit(1)
+				end
+
+				parsed[parent_node].children[sub_tokens[3]] = name
 			end
 
 			if child_type == "Function" then
@@ -220,7 +243,7 @@ function parse_dump(path: string)
 				func_decl = func_decl:gsub(`{parent_node}.`, "")
 
 				table.insert(parsed[parent_node].children, {
-					type = child_type,
+					kind = child_type,
 					name = func_decl:gsub("%b()", ""),
 					params = (function()
 						local args = table.pack(func_decl:match("%b()"))

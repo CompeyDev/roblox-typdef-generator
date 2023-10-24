@@ -18,7 +18,7 @@ function codegen.generate_types(path: string)
 		},
 	} = json_decode(contents)
 
-	print(json)
+	-- print(json)
 end
 
 return codegen

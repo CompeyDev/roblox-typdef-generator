@@ -1,0 +1,6688 @@
+{
+  "Accessory": {
+    "base_type": "Accoutrement",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "ype",
+        "tags": {},
+        "type": "Enum.AccessoryType"
+      }
+    ],
+    "tags": {}
+  },
+  "AccessoryDescription": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Puffiness", "tags": {}, "type": "float" }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "Accoutrement": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ServerUnequipInstance oldCharacter) {RobloxSecurity}",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "Actor": {
+    "base_type": "Model",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SendMessage",
+        "params": [
+          { "name": "topic", "type": "string" },
+          { "name": "message", "type": "Tuple" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "AdGui": { "base_type": "SurfaceGuiBase", "children": {}, "tags": {} },
+  "AdPortal": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "TeleportRejected",
+        "params": [
+          { "name": "shouldCooldown", "type": "bool" },
+          { "name": "rejectedByDistance", "type": "bool" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "AdService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "VideoAdClosed [Deprecated]",
+        "params": [{ "name": "adShown", "type": "bool" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "AdvancedDragger": { "base_type": "Instance", "tags": {} },
+  "AirController": {
+    "base_type": "ControllerBase",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "TurnSpeedFactor",
+        "tags": {},
+        "type": "float"
+      }
+    ],
+    "tags": {}
+  },
+  "AlignOrientation": {
+    "base_type": "Constraint",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "SecondaryAxis",
+        "tags": ["[NotReplicated"],
+        "type": "Vector3"
+      }
+    ],
+    "tags": {}
+  },
+  "AlignPosition": {
+    "base_type": "Constraint",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Responsiveness",
+        "tags": {},
+        "type": "float"
+      }
+    ],
+    "tags": {}
+  },
+  "AnalysticsSettings": {
+    "base_type": "GenericSettings",
+    "tags": ["NotCreatable"]
+  },
+  "AnalyticsService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "FirePlayerProgressionEvent",
+        "params": [
+          { "name": "player", "type": "Instance" },
+          { "name": "category", "type": "string" },
+          {
+            "name": "progressionStatus",
+            "type": "Enum.AnalyticsProgressionStatus"
+          },
+          { "name": "location", "type": "Variant" },
+          { "name": "statistics", "type": "Variant" },
+          { "name": "customData", "type": "Variant" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": ["Service", "Deprecated"]
+  },
+  "AngularVelocity": {
+    "base_type": "Constraint",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "RelativeTo",
+        "tags": {},
+        "type": "Enum.ActuatorRelativeTo"
+      }
+    ],
+    "tags": {}
+  },
+  "Animation": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "d", "tags": {}, "type": "Content" }
+    ],
+    "tags": {}
+  },
+  "AnimationClip": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Priority",
+        "tags": {},
+        "type": "Enum.AnimationPriority"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "AnimationClipProvider": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "RegisterAnimationClip",
+        "params": [{ "name": "animationClip", "type": "AnimationClip" }],
+        "ret": "Content"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "AnimationConstraint": {
+    "base_type": "Constraint",
+    "children": [
+      { "kind": "Property", "name": "Transform", "tags": {}, "type": "CFrame" }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "AnimationController": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "AnimationPlayed [Deprecated]",
+        "params": [{ "name": "animationTrack", "type": "AnimationTrack" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "AnimationFromVideoCreatorService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetJobStatus",
+        "params": [{ "name": "jobId", "type": "string" }],
+        "ret": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "AnimationFromVideoCreatorStudioService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "IsAgeRestricted {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "AnimationImportData": {
+    "base_type": "BaseImportData",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "AnimationRigData": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "LoadFromHumanoid",
+        "params": [{ "name": "humanoid", "type": "Instance" }],
+        "ret": "bool"
+      }
+    ],
+    "tags": {}
+  },
+  "AnimationStreamTrack": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "Stopped {RobloxScriptSecurity}",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "AnimationTrack": {
+    "base_type": "Instance",
+    "children": [{ "name": "Stopped", "params": {}, "type": "Event" }],
+    "tags": ["NotCreatable"]
+  },
+  "Animator": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "StreamSyncRequest {RobloxSecurity}",
+        "params": [{ "name": "player", "type": "Player" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "AppStorageService": {
+    "base_type": "LocalStorageService",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "AppUpdateService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "PerformManagedUpdate {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ArcHandles": {
+    "base_type": "HandlesBase",
+    "children": [
+      {
+        "name": "MouseLeave",
+        "params": [{ "name": "axis", "type": "Enum.Axis" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "AssetCounterService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "AssetDeliveryProxy": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "StartServer", "tags": {}, "type": "bool" }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "AssetImportService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "StartSessionWithPrompt {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "AssetImportSession"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "AssetImportSession": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "UploadProgress",
+        "params": [{ "name": "progressRatio", "type": "float" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "AssetManagerService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "MayBeLinkedSourceModified {RobloxScriptSecurity}",
+        "params": [{ "name": "aliasName", "type": "string" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "AssetPatchSettings": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "PatchId", "tags": {}, "type": "string" }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "AssetService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "OpenPublishResultModal {RobloxScriptSecurity}",
+        "params": [
+          { "name": "resultType", "type": "Enum.PromptPublishAssetResult" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "AssetSoundEffect": {
+    "base_type": "CustomSoundEffect",
+    "tags": ["NotCreatable"]
+  },
+  "Atmosphere": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Haze", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "Attachment": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetSecondaryAxis",
+        "params": [{ "name": "axis", "type": "Vector3" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "AudioAnalyzer": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetSpectrum [CustomLuaState]",
+        "params": {},
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "AudioChorus": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetConnectedWires",
+        "params": [{ "name": "pin", "type": "string" }],
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "AudioCompressor": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetConnectedWires",
+        "params": [{ "name": "pin", "type": "string" }],
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "AudioDeviceInput": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetUserIdAccessList",
+        "params": [{ "name": "userIds", "type": "Array" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "AudioDeviceOutput": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetConnectedWires",
+        "params": [{ "name": "pin", "type": "string" }],
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "AudioDistortion": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetConnectedWires",
+        "params": [{ "name": "pin", "type": "string" }],
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "AudioEcho": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetConnectedWires",
+        "params": [{ "name": "pin", "type": "string" }],
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "AudioEmitter": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetInteractingListeners {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "AudioEqualizer": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetConnectedWires",
+        "params": [{ "name": "pin", "type": "string" }],
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "AudioFader": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetConnectedWires",
+        "params": [{ "name": "pin", "type": "string" }],
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "AudioFlanger": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetConnectedWires",
+        "params": [{ "name": "pin", "type": "string" }],
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "AudioListener": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetInteractingEmitters {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "AudioPages": {
+    "base_type": "Pages",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "AudioPitchShifter": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetConnectedWires",
+        "params": [{ "name": "pin", "type": "string" }],
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "AudioPlayer": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Function", "name": "Stop", "params": {}, "ret": "void" }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "AudioReverb": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetConnectedWires",
+        "params": [{ "name": "pin", "type": "string" }],
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "AudioSearchParams": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Title", "tags": {}, "type": "string" }
+    ],
+    "tags": ["NotReplicated"]
+  },
+  "AvatarChatService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "OnClientFeatures {RobloxSecurity}",
+        "params": [{ "name": "features", "type": "int" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "AvatarCreationService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "PromptCreateAvatarAsync",
+        "params": [
+          { "name": "player", "type": "Player" },
+          { "name": "humanoidDescription", "type": "HumanoidDescription" }
+        ],
+        "ret": "Tuple"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "AvatarEditorService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "PromptUpdateOutfitCompleted",
+        "params": [{ "name": "result", "type": "Enum.AvatarPromptResult" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "AvatarImportService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "LoadRigAndDetectType",
+        "params": [{ "name": "promptR15Callback", "type": "Function" }],
+        "ret": "Instance"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Backpack": { "base_type": "Instance", "tags": {} },
+  "BackpackItem": {
+    "base_type": "Model",
+    "children": [
+      { "kind": "Property", "name": "TextureId", "tags": {}, "type": "Content" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "BadgeService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "OnBadgeAwarded",
+        "params": [
+          { "name": "userId", "type": "int64" },
+          { "name": "creatorId", "type": "int64" },
+          { "name": "badgeId", "type": "int64" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "BallSocketConstraint": {
+    "base_type": "Constraint",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "TwistUpperAngle",
+        "tags": {},
+        "type": "float"
+      }
+    ],
+    "tags": {}
+  },
+  "BaseImportData": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "StatusReported",
+        "params": [{ "name": "status", "type": "Dictionary" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "BasePart": {
+    "base_type": "PVInstance",
+    "children": [
+      {
+        "name": "Touched",
+        "params": [{ "name": "otherPart", "type": "any" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "BasePlayerGui": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetGuiObjectsInCircle",
+        "params": [
+          { "name": "position", "type": "Vector2" },
+          { "name": "radius", "type": "float" }
+        ],
+        "ret": "Objects"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "BaseScript": {
+    "base_type": "LuaSourceContainer",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "LinkedSource",
+        "tags": {},
+        "type": "Content"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "BaseWrap": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "ModifyVertices",
+        "params": [
+          { "name": "cageType", "type": "Enum.CageType" },
+          { "name": "vertices", "type": "Array" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "Beam": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetTextureOffset",
+        "params": [{ "name": "offset", "type": "float" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "BevelMesh": {
+    "base_type": "DataModelMesh",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Bulge",
+        "tags": ["[Hidden", "[NotScriptable", "[Deprecated"],
+        "type": "float"
+      }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable", "Deprecated"]
+  },
+  "BillboardGui": {
+    "base_type": "LayerCollector",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetScreenSpaceBounds {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "Variant"
+      }
+    ],
+    "tags": {}
+  },
+  "BinaryStringValue": {
+    "base_type": "ValueBase",
+    "children": [
+      {
+        "name": "Changed",
+        "params": [{ "name": "value", "type": "BinaryString" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "BindableEvent": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "Event",
+        "params": [{ "name": "arguments", "type": "Tuple" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "BindableFunction": { "base_type": "Instance", "children": {}, "tags": {} },
+  "BlockMesh": { "base_type": "BevelMesh", "tags": {} },
+  "BloomEffect": {
+    "base_type": "PostEffect",
+    "children": [
+      { "kind": "Property", "name": "Threshold", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "BlurEffect": {
+    "base_type": "PostEffect",
+    "children": [
+      { "kind": "Property", "name": "Size", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "BodyAngularVelocity": {
+    "base_type": "BodyMover",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "angularvelocity",
+        "tags": ["[<📁>", "LoadOnly]", "[NotReplicated", "[Deprecated"],
+        "type": "Vector3"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "BodyColors": {
+    "base_type": "CharacterAppearance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "TorsoColor3",
+        "tags": {},
+        "type": "Color3"
+      }
+    ],
+    "tags": {}
+  },
+  "BodyForce": {
+    "base_type": "BodyMover",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Force",
+        "tags": ["[Deprecated"],
+        "type": "Vector3"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "BodyGyro": {
+    "base_type": "BodyMover",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "cframe",
+        "tags": ["[<📁>", "LoadOnly]", "[NotReplicated", "[Deprecated"],
+        "type": "CFrame"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "BodyMover": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Deprecated"]
+  },
+  "BodyPartDescription": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Instance", "tags": {}, "type": "Instance" }
+    ],
+    "tags": ["NotBrowsable"]
+  },
+  "BodyPosition": {
+    "base_type": "BodyMover",
+    "children": [
+      { "name": "ReachedTarget [Deprecated]", "params": {}, "type": "Event" }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "BodyThrust": {
+    "base_type": "BodyMover",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Location",
+        "tags": ["[Deprecated"],
+        "type": "Vector3"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "BodyVelocity": {
+    "base_type": "BodyMover",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "lastForce [Deprecated]",
+        "params": {},
+        "ret": "Vector3"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "Bone": {
+    "base_type": "Attachment",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Transform",
+        "tags": ["[<📁>", "LoadOnly]", "[NotReplicated"],
+        "type": "CFrame"
+      }
+    ],
+    "tags": {}
+  },
+  "BoolValue": {
+    "base_type": "ValueBase",
+    "children": [
+      {
+        "name": "Changed",
+        "params": [{ "name": "value", "type": "bool" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "BoxHandleAdornment": {
+    "base_type": "HandleAdornment",
+    "children": [
+      { "kind": "Property", "name": "Size", "tags": {}, "type": "Vector3" }
+    ],
+    "tags": {}
+  },
+  "Breakpoint": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Verified",
+        "tags": ["{RobloxScriptSecurity}", "[Hidden", "[ReadOnly"],
+        "type": "bool"
+      }
+    ],
+    "tags": ["NotReplicated"]
+  },
+  "BrickColorValue": {
+    "base_type": "ValueBase",
+    "children": [
+      {
+        "name": "Changed",
+        "params": [{ "name": "value", "type": "BrickColor" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "BrowserService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "JavaScriptCallback {RobloxScriptSecurity}",
+        "params": [{ "name": "content", "type": "string" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "BubbleChatConfiguration": {
+    "base_type": "TextChatConfigurations",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "VerticalStudsOffset",
+        "tags": {},
+        "type": "float"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "BubbleChatMessageProperties": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "TextSize", "tags": {}, "type": "int64" }
+    ],
+    "tags": {}
+  },
+  "BulkImportService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "BulkImportStarted {RobloxScriptSecurity}",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "BuoyancySensor": {
+    "base_type": "SensorBase",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "TouchingSurface",
+        "tags": {},
+        "type": "bool"
+      }
+    ],
+    "tags": {}
+  },
+  "CFrameValue": {
+    "base_type": "ValueBase",
+    "children": [
+      {
+        "name": "Changed",
+        "params": [{ "name": "value", "type": "CFrame" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "CSGDictionaryService": {
+    "base_type": "FlyweightService",
+    "tags": ["Service"]
+  },
+  "CacheableContentProvider": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "CalloutService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "DetachCalloutsByDefinitionId",
+        "params": [{ "name": "definitionId", "type": "string" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Camera": {
+    "base_type": "Instance",
+    "children": [
+      { "name": "InterpolationFinished", "params": {}, "type": "Event" }
+    ],
+    "tags": ["NotReplicated"]
+  },
+  "CanvasGroup": {
+    "base_type": "GuiObject",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "GroupTransparency",
+        "tags": {},
+        "type": "float"
+      }
+    ],
+    "tags": {}
+  },
+  "CaptureService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "CaptureSaved {RobloxScriptSecurity}",
+        "params": [{ "name": "captureInfo", "type": "Dictionary" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "CatalogPages": {
+    "base_type": "Pages",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "ChangeHistoryService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "OnUndo {PluginSecurity}",
+        "params": [{ "name": "waypoint", "type": "string" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "ChannelSelectorSoundEffect": {
+    "base_type": "CustomSoundEffect",
+    "children": [
+      { "kind": "Property", "name": "Channel", "tags": {}, "type": "int" }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "CharacterAppearance": { "base_type": "Instance", "tags": ["NotCreatable"] },
+  "CharacterMesh": {
+    "base_type": "CharacterAppearance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "OverlayTextureId",
+        "tags": {},
+        "type": "int64"
+      }
+    ],
+    "tags": {}
+  },
+  "Chat": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ServerToClientUnderOver13FilteredResponseSignal",
+        "params": [
+          { "name": "sender", "type": "Instance" },
+          { "name": "unfilteredMessage", "type": "string" },
+          { "name": "isError", "type": "bool" },
+          { "name": "errorStr", "type": "string" },
+          { "name": "under13", "type": "string" },
+          { "name": "over13", "type": "string" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ChatInputBarConfiguration": {
+    "base_type": "TextChatConfigurations",
+    "children": [
+      { "kind": "Property", "name": "TextBox", "tags": {}, "type": "TextBox" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "ChatWindowConfiguration": {
+    "base_type": "TextChatConfigurations",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "VerticalAlignment",
+        "tags": ["{🧬Unsafe}"],
+        "type": "Enum.VerticalAlignment"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "ChatbotUIService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "DisplayContent",
+        "params": [
+          { "name": "contentType", "type": "string" },
+          { "name": "data", "type": "Dictionary" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ChorusSoundEffect": {
+    "base_type": "SoundEffect",
+    "children": [
+      { "kind": "Property", "name": "Rate", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "ClickDetector": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "RightMouseClick",
+        "params": [{ "name": "playerWhoClicked", "type": "Player" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "ClientReplicator": {
+    "base_type": "NetworkReplicator",
+    "children": [
+      {
+        "name": "StatsReceived {RobloxScriptSecurity}",
+        "params": [{ "name": "stats", "type": "Dictionary" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "ClimbController": {
+    "base_type": "ControllerBase",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "MoveMaxForce",
+        "tags": {},
+        "type": "float"
+      }
+    ],
+    "tags": {}
+  },
+  "Clothing": {
+    "base_type": "CharacterAppearance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Outfit2",
+        "tags": [
+          "[<📁>",
+          "LoadOnly]",
+          "[Hidden",
+          "[NotReplicated",
+          "[NotScriptable"
+        ],
+        "type": "Content"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "CloudLocalizationTable": {
+    "base_type": "LocalizationTable",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "Clouds": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Enabled", "tags": {}, "type": "bool" }
+    ],
+    "tags": {}
+  },
+  "ClusterPacketCache": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Collaborator": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Username", "tags": {}, "type": "string" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "CollaboratorsService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "CollaboratorStatusUpdatedSignal {RobloxSecurity}",
+        "params": [
+          { "name": "collaboratorId", "type": "int64" },
+          { "name": "newStatus", "type": "Enum.CollaboratorStatus" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "CollectionService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "TagRemoved",
+        "params": [{ "name": "tag", "type": "string" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "Color3Value": {
+    "base_type": "ValueBase",
+    "children": [
+      {
+        "name": "Changed",
+        "params": [{ "name": "value", "type": "Color3" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "ColorCorrectionEffect": {
+    "base_type": "PostEffect",
+    "children": [
+      { "kind": "Property", "name": "TintColor", "tags": {}, "type": "Color3" }
+    ],
+    "tags": {}
+  },
+  "CommandInstance": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "RegisterExecutionCallback",
+        "params": [{ "name": "callbackFunction", "type": "Function" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "CommandService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "CommandExecuting {RobloxScriptSecurity}",
+        "params": [
+          { "name": "name", "type": "string" },
+          { "name": "params", "type": "Variant" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "CompressorSoundEffect": {
+    "base_type": "SoundEffect",
+    "children": [
+      { "kind": "Property", "name": "Threshold", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "ConeHandleAdornment": {
+    "base_type": "HandleAdornment",
+    "children": [
+      { "kind": "Property", "name": "Radius", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "Configuration": { "base_type": "Instance", "tags": {} },
+  "ConfigureServerService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "Constraint": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Enabled", "tags": {}, "type": "bool" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "ContentProvider": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "AssetFetchFailed",
+        "params": [{ "name": "assetId", "type": "Content" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ContextActionService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "LocalToolUnequipped",
+        "params": [{ "name": "toolUnequipped", "type": "Instance" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "Controller": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ButtonChanged",
+        "params": [{ "name": "button", "type": "Enum.Button" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "ControllerBase": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "MoveSpeedFactor",
+        "tags": {},
+        "type": "float"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "ControllerManager": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "MovingDirection",
+        "tags": {},
+        "type": "Vector3"
+      }
+    ],
+    "tags": {}
+  },
+  "ControllerPartSensor": {
+    "base_type": "ControllerSensor",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "SensedPart",
+        "tags": {},
+        "type": "BasePart"
+      }
+    ],
+    "tags": {}
+  },
+  "ControllerSensor": { "base_type": "SensorBase", "tags": ["NotCreatable"] },
+  "ControllerService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "CookiesService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "CoreGui": {
+    "base_type": "BasePlayerGui",
+    "children": [
+      {
+        "name": "UserGuiRenderingChanged",
+        "params": [
+          { "name": "enabled", "type": "bool" },
+          { "name": "guiAdornee", "type": "Instance" },
+          { "name": "faceId", "type": "Enum.NormalId" },
+          { "name": "horizontalCurvature", "type": "float" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "CorePackages": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "CoreScript": {
+    "base_type": "BaseScript",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "CoreScriptDebuggingManagerHelper": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "CoreScriptSyncService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetScriptFilePath",
+        "params": [{ "name": "script", "type": "Instance" }],
+        "ret": "Variant"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "CornerWedgePart": { "base_type": "BasePart", "tags": {} },
+  "CreationDBService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "CrossDMScriptChangeListener": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "GuidNameChanged {RobloxScriptSecurity}",
+        "params": [
+          { "name": "guid", "type": "string" },
+          { "name": "fullName", "type": "string" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "CurveAnimation": { "base_type": "AnimationClip", "tags": {} },
+  "CustomEvent": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ReceiverDisconnected [Deprecated]",
+        "params": [{ "name": "receiver", "type": "Instance" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "CustomEventReceiver": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "SourceValueChanged [Deprecated]",
+        "params": [{ "name": "newValue", "type": "float" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "CustomSoundEffect": { "base_type": "SoundEffect", "tags": ["NotCreatable"] },
+  "CylinderHandleAdornment": {
+    "base_type": "HandleAdornment",
+    "children": [
+      { "kind": "Property", "name": "Radius", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "CylinderMesh": { "base_type": "BevelMesh", "tags": ["Deprecated"] },
+  "CylindricalConstraint": {
+    "base_type": "SlidingBallConstraint",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "WorldRotationAxis",
+        "tags": ["[ReadOnly"],
+        "type": "Vector3"
+      }
+    ],
+    "tags": {}
+  },
+  "DataModel": {
+    "base_type": "ServiceProvider",
+    "children": {},
+    "tags": ["NotCreatable"]
+  },
+  "DataModelMesh": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "VertexColor",
+        "tags": {},
+        "type": "Vector3"
+      }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "DataModelPatchService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "UpdatePatch",
+        "params": [
+          { "name": "userId", "type": "int64" },
+          { "name": "patchName", "type": "string" },
+          { "name": "callbackFunction", "type": "Function" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "DataModelSession": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "DataModelWillBeDestroyed {RobloxScriptSecurity}",
+        "params": [
+          { "name": "gameStateType", "type": "Enum.StudioDataModelType" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "DataStore": {
+    "base_type": "GlobalDataStore",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "RemoveVersionAsync",
+        "params": [
+          { "name": "key", "type": "string" },
+          { "name": "version", "type": "string" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "DataStoreGetOptions": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "UseCache", "tags": {}, "type": "bool" }
+    ],
+    "tags": ["NotReplicated"]
+  },
+  "DataStoreIncrementOptions": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetMetadata",
+        "params": [{ "name": "attributes", "type": "Dictionary" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotReplicated"]
+  },
+  "DataStoreInfo": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "UpdatedTime",
+        "tags": ["[ReadOnly"],
+        "type": "int64"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "DataStoreKey": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "KeyName",
+        "tags": ["[ReadOnly"],
+        "type": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "DataStoreKeyInfo": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Function", "name": "GetUserIds", "params": {}, "ret": "Array" }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "DataStoreKeyPages": {
+    "base_type": "Pages",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Cursor",
+        "tags": ["[ReadOnly"],
+        "type": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "DataStoreListingPages": {
+    "base_type": "Pages",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Cursor",
+        "tags": ["[ReadOnly"],
+        "type": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "DataStoreObjectVersionInfo": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Version",
+        "tags": ["[ReadOnly"],
+        "type": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "DataStoreOptions": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetExperimentalFeatures",
+        "params": [{ "name": "experimentalFeatures", "type": "Dictionary" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotReplicated"]
+  },
+  "DataStorePages": {
+    "base_type": "Pages",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "DataStoreService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "ListDataStoresAsync",
+        "params": [
+          { "name": "prefix", "type": "string" },
+          { "name": "pageSize", "type": "int" },
+          { "name": "cursor", "type": "string" }
+        ],
+        "ret": "DataStoreListingPages"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "DataStoreSetOptions": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetMetadata",
+        "params": [{ "name": "attributes", "type": "Dictionary" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotReplicated"]
+  },
+  "DataStoreVersionPages": {
+    "base_type": "Pages",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "Debris": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetLegacyMaxItems",
+        "params": [{ "name": "enabled", "type": "bool" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "DebugSettings": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "RobloxVersion",
+        "tags": ["[ReadOnly"],
+        "type": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "Settings", "NotBrowsable"]
+  },
+  "DebuggablePluginWatcher": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "DebuggerBreakpoint": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "isContextDependentBreakpoint",
+        "tags": {},
+        "type": "bool"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "DebuggerConnection": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "Resumed {RobloxScriptSecurity}",
+        "params": [{ "name": "pausedState", "type": "PausedState" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "DebuggerConnectionManager": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "FocusChanged {RobloxScriptSecurity}",
+        "params": [{ "name": "connection", "type": "DebuggerConnection" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "DebuggerLuaResponse": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetArg {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "Variant"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "DebuggerManager": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "DebuggerRemoved",
+        "params": [{ "name": "debugger", "type": "Instance" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "DebuggerUIService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ExpressionsCleared {RobloxScriptSecurity}",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "DebuggerVariable": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetVariableByName",
+        "params": [{ "name": "name", "type": "string" }],
+        "ret": "DebuggerVariable"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "DebuggerWatch": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Expression", "tags": {}, "type": "string" }
+    ],
+    "tags": {}
+  },
+  "Decal": {
+    "base_type": "FaceInstance",
+    "children": [
+      { "kind": "Property", "name": "ZIndex", "tags": {}, "type": "int" }
+    ],
+    "tags": {}
+  },
+  "DepthOfFieldEffect": {
+    "base_type": "PostEffect",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "NearIntensity",
+        "tags": {},
+        "type": "float"
+      }
+    ],
+    "tags": {}
+  },
+  "DeviceIdService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetDeviceId {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Dialog": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "hoiceSelected",
+        "params": [
+          { "name": "player", "type": "Instance" },
+          { "name": "dialogChoice", "type": "Instance" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "DialogChoice": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "UserDialog", "tags": {}, "type": "string" }
+    ],
+    "tags": {}
+  },
+  "DistortionSoundEffect": {
+    "base_type": "SoundEffect",
+    "children": [
+      { "kind": "Property", "name": "Level", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "DockWidgetPluginGui": {
+    "base_type": "PluginGui",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "RequestRaise {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "DoubleConstrainedValue": {
+    "base_type": "ValueBase",
+    "children": [
+      {
+        "name": "Changed [Deprecated]",
+        "params": [{ "name": "value", "type": "double" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "DraftsService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "UpdateStatusChanged {RobloxScriptSecurity}",
+        "params": [
+          { "name": "script", "type": "Instance" },
+          { "name": "status", "type": "Enum.DraftStatusCode" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "DragDetector": {
+    "base_type": "ClickDetector",
+    "children": [
+      {
+        "name": "DragStart",
+        "params": [
+          { "name": "playerWhoDragged", "type": "Player" },
+          { "name": "cursorRay", "type": "Ray" },
+          { "name": "viewFrame", "type": "CFrame" },
+          { "name": "hitFrame", "type": "CFrame" },
+          { "name": "clickedPart", "type": "BasePart" },
+          { "name": "vrInputFrame", "type": "OptionalCoordinateFrame" },
+          { "name": "isModeSwitchKeyDown", "type": "bool" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "Dragger": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Function", "name": "MouseUp", "params": {}, "ret": "void" }
+    ],
+    "tags": {}
+  },
+  "DraggerService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "ShowPivotIndicator",
+        "tags": ["[NotReplicated"],
+        "type": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "DynamicImage": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "WritePixels",
+        "params": [
+          { "name": "position", "type": "Vector2" },
+          { "name": "size", "type": "Vector2" },
+          { "name": "pixels", "type": "Array" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "DynamicMesh": {
+    "base_type": "DataModelMesh",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetVertexNormal",
+        "params": [
+          { "name": "vertexId", "type": "int" },
+          { "name": "vnormal", "type": "Vector3" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "DynamicRotate": {
+    "base_type": "JointInstance",
+    "children": [
+      { "kind": "Property", "name": "BaseAngle", "tags": {}, "type": "float" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "EchoSoundEffect": {
+    "base_type": "SoundEffect",
+    "children": [
+      { "kind": "Property", "name": "WetLevel", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "EmotesPages": {
+    "base_type": "InventoryPages",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "EqualizerSoundEffect": {
+    "base_type": "SoundEffect",
+    "children": [
+      { "kind": "Property", "name": "MidGain", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "EulerRotationCurve": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Function", "name": "Z", "params": {}, "ret": "FloatCurve" }
+    ],
+    "tags": {}
+  },
+  "EventIngestService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetRBXEventStream",
+        "params": [
+          { "name": "target", "type": "string" },
+          { "name": "eventContext", "type": "string" },
+          { "name": "eventName", "type": "string" },
+          { "name": "additionalArgs", "type": "Dictionary" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "ExperienceAuthService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ScopeCheckResult",
+        "params": [
+          { "name": "guid", "type": "string" },
+          { "name": "result", "type": "Enum.ScopeCheckResult" },
+          { "name": "token", "type": "string" },
+          { "name": "scopes", "type": "Array" },
+          { "name": "metadata", "type": "Dictionary" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "ExperienceInviteOptions": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "PromptMessage",
+        "tags": {},
+        "type": "string"
+      }
+    ],
+    "tags": ["NotReplicated"]
+  },
+  "ExperienceNotificationService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "CreateUserNotificationAsync",
+        "params": [
+          { "name": "userId", "type": "string" },
+          { "name": "userNotification", "type": "UserNotification" }
+        ],
+        "ret": "Instance"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ExperienceService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "RegisterForExperienceLeave",
+        "params": [{ "name": "callback", "type": "Function" }],
+        "ret": "RBXScriptConnection"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Explosion": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "Hit",
+        "params": [
+          { "name": "part", "type": "BasePart" },
+          { "name": "distance", "type": "float" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "FaceAnimatorService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "TrackerPrompt {RobloxScriptSecurity}",
+        "params": [{ "name": "prompt", "type": "Enum.TrackerPromptEvent" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "FaceControls": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "TongueUp",
+        "tags": ["{PluginSecurity}", "[NotReplicated"],
+        "type": "float"
+      }
+    ],
+    "tags": {}
+  },
+  "FaceInstance": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Face",
+        "tags": {},
+        "type": "Enum.NormalId"
+      }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "FacialAnimationRecordingService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "IsAgeRestricted {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "FacialAnimationStreamingServiceStats": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetWithPlayerId",
+        "params": [
+          { "name": "label", "type": "string" },
+          { "name": "playerId", "type": "int64" }
+        ],
+        "ret": "int64"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "FacialAnimationStreamingServiceV2": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "ResolveStateForUser",
+        "params": [{ "name": "userId", "type": "int64" }],
+        "ret": "int"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "FacialAnimationStreamingSubsessionStats": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "FacsImportData": {
+    "base_type": "BaseImportData",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "Feature": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "TopBottom",
+        "tags": {},
+        "type": "Enum.TopBottom"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "File": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetTemporaryId {PluginSecurity}",
+        "params": {},
+        "ret": "Content"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "FileMesh": {
+    "base_type": "DataModelMesh",
+    "children": [
+      { "kind": "Property", "name": "TextureId", "tags": {}, "type": "Content" }
+    ],
+    "tags": {}
+  },
+  "Fire": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "FastForward",
+        "params": [{ "name": "numFrames", "type": "int" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "Flag": {
+    "base_type": "Tool",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "TeamColor",
+        "tags": ["[Deprecated"],
+        "type": "BrickColor"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "FlagStand": {
+    "base_type": "Part",
+    "children": [
+      {
+        "name": "FlagCaptured [Deprecated]",
+        "params": [{ "name": "player", "type": "Instance" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "FlagStandService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "FlangeSoundEffect": {
+    "base_type": "SoundEffect",
+    "children": [
+      { "kind": "Property", "name": "Rate", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "FloatCurve": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetKeys",
+        "params": [{ "name": "keys", "type": "Array" }],
+        "ret": "int"
+      }
+    ],
+    "tags": {}
+  },
+  "FloorWire": {
+    "base_type": "GuiBase3d",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "WireRadius",
+        "tags": ["[Deprecated"],
+        "type": "float"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "FlyweightService": { "base_type": "Instance", "tags": ["Service"] },
+  "Folder": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "ReplicatedGuiInsertionOrder",
+        "tags": ["{RobloxSecurity}", "[Hidden", "[NotScriptable"],
+        "type": "int"
+      }
+    ],
+    "tags": {}
+  },
+  "ForceField": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Visible", "tags": {}, "type": "bool" }
+    ],
+    "tags": {}
+  },
+  "FormFactorPart": {
+    "base_type": "BasePart",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "formFactorRaw",
+        "tags": ["[Hidden", "[NotScriptable"],
+        "type": "Enum.FormFactor"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "Frame": {
+    "base_type": "GuiObject",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Style",
+        "tags": {},
+        "type": "Enum.FrameStyle"
+      }
+    ],
+    "tags": {}
+  },
+  "FriendPages": {
+    "base_type": "Pages",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "FriendService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "RemoteFriendStatusSignal",
+        "params": [
+          { "name": "userId", "type": "int64" },
+          { "name": "userId", "type": "int64" },
+          { "name": "status", "type": "Enum.FriendStatus" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "FunctionalTest": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "Warn",
+        "params": [{ "name": "message", "type": "string" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "GamePassService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "PlayerHasPass",
+        "params": [
+          { "name": "player", "type": "Player" },
+          { "name": "gamePassId", "type": "int64" }
+        ],
+        "ret": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "Deprecated"]
+  },
+  "GameSettings": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "VideoRecordingChangeRequest {RobloxScriptSecurity}",
+        "params": [{ "name": "recording", "type": "bool" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Settings", "NotBrowsable"]
+  },
+  "GamepadService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "GamepadThumbstick1Changed {RobloxScriptSecurity}",
+        "params": [{ "name": "event", "type": "Vector2" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "GenericSettings": {
+    "base_type": "ServiceProvider",
+    "tags": ["NotCreatable"]
+  },
+  "Geometry": { "base_type": "Instance", "tags": ["NotCreatable", "Service"] },
+  "GeometryService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "UnionAsync",
+        "params": [
+          { "name": "part", "type": "Instance" },
+          { "name": "parts", "type": "Array" },
+          { "name": "options", "type": "Dictionary" }
+        ],
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "GetTextBoundsParams": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Width", "tags": {}, "type": "float" }
+    ],
+    "tags": ["NotReplicated"]
+  },
+  "GlobalDataStore": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "UpdateAsync",
+        "params": [
+          { "name": "key", "type": "string" },
+          { "name": "transformFunction", "type": "Function" }
+        ],
+        "ret": "Tuple"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "GlobalSettings": {
+    "base_type": "GenericSettings",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetFVariable",
+        "params": [{ "name": "name", "type": "string" }],
+        "ret": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "Glue": {
+    "base_type": "JointInstance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "F3",
+        "tags": ["[Deprecated"],
+        "type": "Vector3"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "GoogleAnalyticsConfiguration": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "gaID",
+        "tags": [
+          "{RobloxScriptSecurity}",
+          "[Hidden",
+          "[NotReplicated",
+          "[NotScriptable"
+        ],
+        "type": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "GroundController": {
+    "base_type": "ControllerBase",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "TurnSpeedFactor",
+        "tags": {},
+        "type": "float"
+      }
+    ],
+    "tags": {}
+  },
+  "GroupImportData": {
+    "base_type": "BaseImportData",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "InsertInWorkspace",
+        "tags": {},
+        "type": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "GroupService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetGroupsAsync",
+        "params": [{ "name": "userId", "type": "int64" }],
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "GuiBase": { "base_type": "Instance", "tags": ["NotCreatable"] },
+  "GuiBase2d": {
+    "base_type": "GuiBase",
+    "children": [
+      {
+        "name": "SelectionChanged",
+        "params": [
+          { "name": "amISelected", "type": "bool" },
+          { "name": "previousSelection", "type": "GuiObject" },
+          { "name": "newSelection", "type": "GuiObject" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "GuiBase3d": {
+    "base_type": "GuiBase",
+    "children": [
+      { "kind": "Property", "name": "Visible", "tags": {}, "type": "bool" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "GuiButton": {
+    "base_type": "GuiObject",
+    "children": [
+      {
+        "name": "MouseButton2Up",
+        "params": [
+          { "name": "x", "type": "int" },
+          { "name": "y", "type": "int" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "GuiLabel": { "base_type": "GuiObject", "tags": ["NotCreatable"] },
+  "GuiMain": { "base_type": "ScreenGui", "tags": ["Deprecated"] },
+  "GuiObject": {
+    "base_type": "GuiBase2d",
+    "children": [
+      {
+        "name": "TouchTap",
+        "params": [{ "name": "touchPositions", "type": "Array" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "GuiService": {
+    "base_type": "Instance",
+    "children": {},
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "GuidRegistryService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "HSRDataContentProvider": {
+    "base_type": "CacheableContentProvider",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "HandleAdornment": {
+    "base_type": "PVAdornment",
+    "children": [{ "name": "MouseLeave", "params": {}, "type": "Event" }],
+    "tags": ["NotCreatable"]
+  },
+  "Handles": {
+    "base_type": "HandlesBase",
+    "children": [
+      {
+        "name": "MouseLeave",
+        "params": [{ "name": "face", "type": "Enum.NormalId" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "HandlesBase": { "base_type": "PartAdornment", "tags": ["NotCreatable"] },
+  "HapticService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetMotor",
+        "params": [
+          { "name": "inputType", "type": "Enum.UserInputType" },
+          { "name": "vibrationMotor", "type": "Enum.VibrationMotor" },
+          { "name": "vibrationValues", "type": "Tuple" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Hat": { "base_type": "Accoutrement", "tags": ["Deprecated"] },
+  "HeightmapImporterService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ProgressUpdate {RobloxScriptSecurity}",
+        "params": [
+          { "name": "progressRatio", "type": "float" },
+          { "name": "operation", "type": "string" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["Service", "NotReplicated"]
+  },
+  "HiddenSurfaceRemovalAsset": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "HSRMeshIdData",
+        "tags": [
+          "{RobloxSecurity}",
+          "[Hidden",
+          "[NotReplicated",
+          "[NotScriptable"
+        ],
+        "type": "BinaryString"
+      }
+    ],
+    "tags": {}
+  },
+  "Highlight": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "ReservedId",
+        "tags": ["{RobloxScriptSecurity}", "[Hidden"],
+        "type": "Enum.ReservedHighlightId"
+      }
+    ],
+    "tags": {}
+  },
+  "HingeConstraint": {
+    "base_type": "Constraint",
+    "children": [
+      { "kind": "Property", "name": "TargetAngle", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "Hint": { "base_type": "Message", "tags": ["Deprecated"] },
+  "Hole": { "base_type": "Feature", "tags": ["Deprecated"] },
+  "Hopper": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "Deprecated"]
+  },
+  "HopperBin": {
+    "base_type": "BackpackItem",
+    "children": [
+      {
+        "name": "Selected [Deprecated]",
+        "params": [{ "name": "mouse", "type": "Instance" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "HttpRbxApiService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "RequestLimitedAsync",
+        "params": [
+          { "name": "requestOptions", "type": "Dictionary" },
+          { "name": "priority", "type": "Enum.ThrottlingPriority" },
+          { "name": "content_type", "type": "Enum.HttpContentType" },
+          { "name": "httpRequestType", "type": "Enum.HttpRequestType" }
+        ],
+        "ret": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "HttpRequest": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "Start",
+        "params": [{ "name": "callback", "type": "Function" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "HttpService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "UrlEncode",
+        "params": [{ "name": "input", "type": "string" }],
+        "ret": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "Humanoid": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "Touched",
+        "params": [
+          { "name": "touchingPart", "type": "BasePart" },
+          { "name": "humanoidPart", "type": "BasePart" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "HumanoidController": { "base_type": "Controller", "tags": {} },
+  "HumanoidDescription": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "EquippedEmotesChanged",
+        "params": [{ "name": "newEquippedEmotes", "type": "Array" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "IKControl": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetSmoothedFinalTarget",
+        "params": {},
+        "ret": "CFrame"
+      }
+    ],
+    "tags": {}
+  },
+  "ILegacyStudioBridge": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "IXPService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "OnUserLayerLoadingStatusChanged {LocalUserSecurity}",
+        "params": [{ "name": "status", "type": "Enum.IXPLoadingStatus" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ImageButton": {
+    "base_type": "GuiButton",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetEnableContentImageSizeChangedEvents",
+        "params": [{ "name": "enabled", "type": "bool" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "ImageHandleAdornment": {
+    "base_type": "HandleAdornment",
+    "children": [
+      { "kind": "Property", "name": "Size", "tags": {}, "type": "Vector2" }
+    ],
+    "tags": {}
+  },
+  "ImageLabel": {
+    "base_type": "GuiLabel",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetEnableContentImageSizeChangedEvents",
+        "params": [{ "name": "enabled", "type": "bool" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "IncrementalPatchBuilder": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "ZstdCompression",
+        "tags": {},
+        "type": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "InputObject": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "IsModifierKeyDown",
+        "params": [{ "name": "modifierKey", "type": "Enum.ModifierKey" }],
+        "ret": "bool"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "InsertService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "InternalDelete [Hidden]",
+        "params": [{ "name": "instance", "type": "Instance" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "Instance": {
+    "base_type": "<<<ROOT>>>",
+    "children": [{ "name": "Destroying", "params": {}, "type": "Event" }],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "InstanceAdornment": {
+    "base_type": "GuiBase3d",
+    "children": [
+      { "kind": "Property", "name": "Adornee", "tags": {}, "type": "Instance" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "IntConstrainedValue": {
+    "base_type": "ValueBase",
+    "children": [
+      {
+        "name": "Changed [Deprecated]",
+        "params": [{ "name": "value", "type": "int64" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "IntValue": {
+    "base_type": "ValueBase",
+    "children": [
+      {
+        "name": "Changed",
+        "params": [{ "name": "value", "type": "int64" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "InternalSyncItem": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Target",
+        "tags": [
+          "{RobloxScriptSecurity}",
+          "[<📁>",
+          "LoadOnly]",
+          "[NotReplicated"
+        ],
+        "type": "Instance"
+      }
+    ],
+    "tags": ["NotReplicated"]
+  },
+  "InternalSyncService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "IntersectOperation": { "base_type": "PartOperation", "tags": {} },
+  "InventoryPages": {
+    "base_type": "Pages",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "JointImportData": {
+    "base_type": "BaseImportData",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "JointInstance": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Part1", "tags": {}, "type": "BasePart" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "JointsService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "ShowPermissibleJoints [Deprecated]",
+        "params": {},
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "Deprecated"]
+  },
+  "KeyboardService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "Keyframe": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "RemovePose",
+        "params": [{ "name": "pose", "type": "Instance" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "KeyframeMarker": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Value", "tags": {}, "type": "string" }
+    ],
+    "tags": {}
+  },
+  "KeyframeSequence": {
+    "base_type": "AnimationClip",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "RemoveKeyframe",
+        "params": [{ "name": "keyframe", "type": "Instance" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "KeyframeSequenceProvider": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "RegisterKeyframeSequence",
+        "params": [{ "name": "keyframeSequence", "type": "Instance" }],
+        "ret": "Content"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "LSPFileSyncService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "LanguageService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "LayerCollector": {
+    "base_type": "GuiBase2d",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetLayoutNodeTree [Deprecated]",
+        "params": {},
+        "ret": "Dictionary"
+      }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "LegacyStudioBridge": {
+    "base_type": "ILegacyStudioBridge",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Light": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Shadows", "tags": {}, "type": "bool" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "Lighting": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "hanged",
+        "params": [{ "name": "skyChanged", "type": "bool" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "LineForce": {
+    "base_type": "Constraint",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "ReactionForceEnabled",
+        "tags": {},
+        "type": "bool"
+      }
+    ],
+    "tags": {}
+  },
+  "LineHandleAdornment": {
+    "base_type": "HandleAdornment",
+    "children": [
+      { "kind": "Property", "name": "Thickness", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "LinearVelocity": {
+    "base_type": "Constraint",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "VectorVelocity",
+        "tags": {},
+        "type": "Vector3"
+      }
+    ],
+    "tags": {}
+  },
+  "LiveScriptingService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "SendOperation {RobloxSecurity}",
+        "params": [
+          { "name": "id", "type": "int64" },
+          { "name": "op", "type": "string" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "LocalDebuggerConnection": {
+    "base_type": "DebuggerConnection",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "LocalScript": { "base_type": "Script", "tags": {} },
+  "LocalStorageService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "StoreWasCleared {RobloxScriptSecurity}",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "LocalizationService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "TextScraperClientMessageWithPlayerSignal",
+        "params": [
+          { "name": "version", "type": "int" },
+          { "name": "player", "type": "Instance" },
+          { "name": "message", "type": "Tuple" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "LocalizationTable": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetIsExemptFromUGCAnalytics",
+        "params": [{ "name": "value", "type": "bool" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "LodDataEntity": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "EntitySource",
+        "tags": ["[Hidden", "[NotScriptable"],
+        "type": "Instance"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "LodDataService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "LogReporterService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "ReportLog",
+        "params": [
+          { "name": "logId", "type": "string" },
+          { "name": "desc", "type": "string" }
+        ],
+        "ret": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "LogService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ServerVariantMessageOut {RobloxSecurity}",
+        "params": [{ "name": "data", "type": "Dictionary" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "LoginService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "LoginSucceeded {RobloxSecurity}",
+        "params": [{ "name": "username", "type": "string" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "LuaSettings": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Settings"]
+  },
+  "LuaSourceContainer": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "VerifyScriptHash {LocalUserSecurity}",
+        "params": [{ "name": "hash", "type": "string" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "LuaWebService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "LuauScriptAnalyzerService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ManualGlue": {
+    "base_type": "ManualSurfaceJointInstance",
+    "tags": ["Deprecated"]
+  },
+  "ManualSurfaceJointInstance": {
+    "base_type": "JointInstance",
+    "tags": ["NotCreatable", "Deprecated"]
+  },
+  "ManualWeld": {
+    "base_type": "ManualSurfaceJointInstance",
+    "tags": ["Deprecated"]
+  },
+  "MarkerCurve": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "RemoveMarkerAtIndex",
+        "params": [
+          { "name": "startingIndex", "type": "int" },
+          { "name": "count", "type": "int" }
+        ],
+        "ret": "int"
+      }
+    ],
+    "tags": {}
+  },
+  "MarketplaceService": {
+    "base_type": "Instance",
+    "children": {},
+    "tags": ["NotCreatable", "Service"]
+  },
+  "MaterialGenerationService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "StartSession {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "MaterialGenerationSession"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "MaterialGenerationSession": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "UploadMaterialAsync",
+        "params": [{ "name": "imageId", "type": "string" }],
+        "ret": "Dictionary"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "MaterialImportData": {
+    "base_type": "BaseImportData",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "RoughnessFilePath",
+        "tags": {},
+        "type": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "MaterialService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "OverrideStatusChanged {RobloxScriptSecurity}",
+        "params": [{ "name": "material", "type": "Enum.Material" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "MaterialVariant": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "CustomPhysicalProperties",
+        "tags": {},
+        "type": "PhysicalProperties"
+      }
+    ],
+    "tags": {}
+  },
+  "MemStorageConnection": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "Disconnect {PluginSecurity}",
+        "params": {},
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "MemStorageService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetItem",
+        "params": [
+          { "name": "key", "type": "string" },
+          { "name": "value", "type": "string" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "MemoryStoreHashMap": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "UpdateAsync",
+        "params": [
+          { "name": "key", "type": "string" },
+          { "name": "transformFunction", "type": "Function" },
+          { "name": "expiration", "type": "int64" }
+        ],
+        "ret": "Variant"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "MemoryStoreQueue": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "RemoveAsync",
+        "params": [{ "name": "id", "type": "string" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "MemoryStoreService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetSortedMap",
+        "params": [{ "name": "name", "type": "string" }],
+        "ret": "MemoryStoreSortedMap"
+      }
+    ],
+    "tags": ["Service"]
+  },
+  "MemoryStoreSortedMap": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "UpdateAsync",
+        "params": [
+          { "name": "key", "type": "string" },
+          { "name": "transformFunction", "type": "Function" },
+          { "name": "expiration", "type": "int64" }
+        ],
+        "ret": "Variant"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "MeshContentProvider": {
+    "base_type": "CacheableContentProvider",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetContentMemoryData {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "Dictionary"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "MeshImportData": {
+    "base_type": "BaseImportData",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "UseImportedPivot",
+        "tags": {},
+        "type": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "MeshPart": {
+    "base_type": "TriangleMeshPart",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "ApplyMesh",
+        "params": [{ "name": "meshPart", "type": "Instance" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "Message": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Text",
+        "tags": ["[Deprecated"],
+        "type": "string"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "MessageBusConnection": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "Disconnect {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "MessageBusService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SubscribeToProtocolMethodResponse",
+        "params": [
+          { "name": "protocolName", "type": "string" },
+          { "name": "methodName", "type": "string" },
+          { "name": "callback", "type": "Function" },
+          { "name": "once", "type": "bool" },
+          { "name": "sticky", "type": "bool" }
+        ],
+        "ret": "Instance"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "MessagingService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SubscribeAsync",
+        "params": [
+          { "name": "topic", "type": "string" },
+          { "name": "callback", "type": "Function" }
+        ],
+        "ret": "RBXScriptConnection"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "MetaBreakpoint": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetRemoveOnHit",
+        "params": [{ "name": "enabled", "type": "bool" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "MetaBreakpointContext": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "ContextDataInternal",
+        "tags": ["[Hidden", "[NotScriptable"],
+        "type": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "MetaBreakpointManager": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "MetaBreakpointSetChanged {RobloxScriptSecurity}",
+        "params": [
+          { "name": "breakpoint", "type": "MetaBreakpoint" },
+          { "name": "detail", "type": "Dictionary" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Model": {
+    "base_type": "PVInstance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "move",
+        "params": [{ "name": "location", "type": "Vector3" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "ModuleScript": {
+    "base_type": "LuaSourceContainer",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Source",
+        "tags": ["{PluginSecurity}"],
+        "type": "ProtectedString"
+      }
+    ],
+    "tags": {}
+  },
+  "Motor": {
+    "base_type": "JointInstance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetDesiredAngle",
+        "params": [{ "name": "value", "type": "float" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "Motor6D": {
+    "base_type": "Motor",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Transform",
+        "tags": ["[Hidden", "[NotReplicated"],
+        "type": "CFrame"
+      }
+    ],
+    "tags": {}
+  },
+  "MotorFeature": { "base_type": "Feature", "tags": ["Deprecated"] },
+  "Mouse": {
+    "base_type": "Instance",
+    "children": [{ "name": "WheelForward", "params": {}, "type": "Event" }],
+    "tags": ["NotCreatable"]
+  },
+  "MouseService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "MouseLeaveStudioViewport {RobloxScriptSecurity}",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "MultipleDocumentInterfaceInstance": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "DataModelSessionStarted {RobloxScriptSecurity}",
+        "params": [{ "name": "dataModelSession", "type": "Instance" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "NegateOperation": { "base_type": "PartOperation", "tags": {} },
+  "NetworkClient": {
+    "base_type": "NetworkPeer",
+    "children": [
+      {
+        "name": "ConnectionFailed",
+        "params": [
+          { "name": "peer", "type": "string" },
+          { "name": "code", "type": "int" },
+          { "name": "reason", "type": "string" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "NetworkMarker": {
+    "base_type": "Instance",
+    "children": [{ "name": "Received", "params": {}, "type": "Event" }],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "NetworkPeer": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetOutgoingKBPSLimit",
+        "params": [{ "name": "limit", "type": "int" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "NetworkReplicator": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetPlayer",
+        "params": {},
+        "ret": "Instance"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "NetworkServer": {
+    "base_type": "NetworkPeer",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "EncryptStringForPlayerId",
+        "params": [
+          { "name": "toEncrypt", "type": "string" },
+          { "name": "playerId", "type": "int64" }
+        ],
+        "ret": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "NetworkSettings": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "OpenCertManagerDialog",
+        "tags": [
+          "{NotAccessibleSecurity}",
+          "[Hidden",
+          "[NotReplicated",
+          "[NotScriptable"
+        ],
+        "type": "int"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotBrowsable"]
+  },
+  "NoCollisionConstraint": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Part1", "tags": {}, "type": "BasePart" }
+    ],
+    "tags": {}
+  },
+  "NonReplicatedCSGDictionaryService": {
+    "base_type": "FlyweightService",
+    "tags": ["Service"]
+  },
+  "NotificationService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "RobloxEventReceived {RobloxScriptSecurity}",
+        "params": [{ "name": "eventData", "type": "Map" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "NumberPose": {
+    "base_type": "PoseBase",
+    "children": [
+      { "kind": "Property", "name": "Value", "tags": {}, "type": "double" }
+    ],
+    "tags": {}
+  },
+  "NumberValue": {
+    "base_type": "ValueBase",
+    "children": [
+      {
+        "name": "Changed",
+        "params": [{ "name": "value", "type": "double" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "ObjectValue": {
+    "base_type": "ValueBase",
+    "children": [
+      {
+        "name": "Changed",
+        "params": [{ "name": "value", "type": "Instance" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "OmniRecommendationsService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "MakeRequest",
+        "params": [{ "name": "nextPageToken", "type": "string" }],
+        "ret": "HttpRequest"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "OpenCloudApiV1": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "CreateUserNotificationAsync",
+        "params": [
+          { "name": "user", "type": "string" },
+          { "name": "userNotification", "type": "OpenCloudModel" }
+        ],
+        "ret": "OpenCloudModel"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "OpenCloudService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "RegisterOpenCloud",
+        "params": [
+          { "name": "version", "type": "string" },
+          { "name": "methodName", "type": "string" },
+          { "name": "method", "type": "Function" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "OperationTree": { "base_type": "Instance", "tags": {} },
+  "OrderedDataStore": {
+    "base_type": "GlobalDataStore",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetSortedAsync",
+        "params": [
+          { "name": "ascending", "type": "bool" },
+          { "name": "pagesize", "type": "int" },
+          { "name": "minValue", "type": "Variant" },
+          { "name": "maxValue", "type": "Variant" }
+        ],
+        "ret": "Instance"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "OutfitPages": {
+    "base_type": "Pages",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "PVAdornment": {
+    "base_type": "GuiBase3d",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Adornee",
+        "tags": {},
+        "type": "PVInstance"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "PVInstance": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "PivotTo",
+        "params": [{ "name": "targetCFrame", "type": "CFrame" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "PackageLink": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "CanAutoUpdate",
+        "tags": [
+          "{RobloxSecurity}",
+          "[Hidden",
+          "[NotReplicated",
+          "[NotScriptable"
+        ],
+        "type": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "PackageService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "PackageUIService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "OnOpenConvertToPackagePlugin",
+        "params": [
+          { "name": "instances", "type": "Objects" },
+          { "name": "name", "type": "string" },
+          { "name": "cloneInstances", "type": "Objects" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Pages": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetCurrentPage",
+        "params": {},
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "Pants": {
+    "base_type": "Clothing",
+    "children": [
+      { "kind": "Property", "name": "emplate", "tags": {}, "type": "Content" }
+    ],
+    "tags": {}
+  },
+  "ParabolaAdornment": {
+    "base_type": "PVAdornment",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "FindPartOnParabola",
+        "params": [{ "name": "ignoreDescendentsTable", "type": "Objects" }],
+        "ret": "Tuple"
+      }
+    ],
+    "tags": {}
+  },
+  "Part": {
+    "base_type": "FormFactorPart",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "shap",
+        "tags": [
+          "[<📁>",
+          "LoadOnly]",
+          "[Hidden",
+          "[WriteOnly",
+          "[NotReplicated",
+          "[NotScriptable"
+        ],
+        "type": "Enum.PartType"
+      }
+    ],
+    "tags": {}
+  },
+  "PartAdornment": {
+    "base_type": "GuiBase3d",
+    "children": [
+      { "kind": "Property", "name": "Adornee", "tags": {}, "type": "BasePart" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "PartOperation": {
+    "base_type": "TriangleMeshPart",
+    "children": [
+      {
+        "name": "RequestMeshFullUpdate {RobloxSecurity} [Hidden]",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "PartOperationAsset": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "MeshData",
+        "tags": ["{RobloxSecurity}", "[Hidden", "[NotScriptable"],
+        "type": "BinaryString"
+      }
+    ],
+    "tags": {}
+  },
+  "ParticleEmitter": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "OnEmitRequested [Hidden]",
+        "params": [{ "name": "particleCount", "type": "int" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "PatchBundlerFileWatch": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "PatchMapping": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "TargetPath", "tags": {}, "type": "string" }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "Path": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "Unblocked",
+        "params": [{ "name": "unblockedWaypointIdx", "type": "int" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "PathfindingLink": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Label", "tags": {}, "type": "string" }
+    ],
+    "tags": {}
+  },
+  "PathfindingModifier": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "PassThrough", "tags": {}, "type": "bool" }
+    ],
+    "tags": {}
+  },
+  "PathfindingService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "FindPathAsync",
+        "params": [
+          { "name": "start", "type": "Vector3" },
+          { "name": "finish", "type": "Vector3" }
+        ],
+        "ret": "Instance"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "PausedState": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "AllThreadsPaused",
+        "tags": ["{RobloxScriptSecurity}", "[Hidden", "[ReadOnly"],
+        "type": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "PausedStateBreakpoint": {
+    "base_type": "PausedState",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Breakpoint",
+        "tags": ["{RobloxScriptSecurity}", "[Hidden", "[ReadOnly"],
+        "type": "Breakpoint"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "PausedStateException": {
+    "base_type": "PausedState",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "ExceptionText",
+        "tags": ["{RobloxScriptSecurity}", "[Hidden", "[ReadOnly"],
+        "type": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "PermissionsService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetPermissions",
+        "params": [
+          { "name": "assetId", "type": "string" },
+          { "name": "permissions", "type": "Array" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "PhysicsService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "UnregisterCollisionGroup",
+        "params": [{ "name": "name", "type": "string" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "PhysicsSettings": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "ThrottleAdjustTime",
+        "tags": {},
+        "type": "double"
+      }
+    ],
+    "tags": ["NotCreatable", "Settings"]
+  },
+  "PitchShiftSoundEffect": {
+    "base_type": "SoundEffect",
+    "children": [
+      { "kind": "Property", "name": "Octave", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "PlaceStatsService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "PlacesService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "StartPlaySolo {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Plane": { "base_type": "PlaneConstraint", "tags": ["Deprecated"] },
+  "PlaneConstraint": { "base_type": "Constraint", "tags": {} },
+  "Platform": {
+    "base_type": "Part",
+    "children": [
+      { "name": "RemoteDestroyMotor6D [Hidden]", "params": {}, "type": "Event" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "PlatformFriendsService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "ShowInviteFriendsUI {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Player": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "StatsAvailable {LocalUserSecurity}",
+        "params": [{ "name": "info", "type": "string" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "PlayerEmulatorService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetEmulatedPolicyInfo",
+        "params": [{ "name": "emulatedPolicyInfo", "type": "Dictionary" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "PlayerGui": {
+    "base_type": "BasePlayerGui",
+    "children": [
+      {
+        "name": "TopbarTransparencyChangedSignal [Deprecated]",
+        "params": [{ "name": "transparency", "type": "float" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "PlayerReplicated"]
+  },
+  "PlayerMouse": { "base_type": "Mouse", "tags": ["NotCreatable"] },
+  "PlayerScripts": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "TouchMovementModeRegistered {RobloxScriptSecurity}",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "PlayerViewService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetDeviceCameraCFrame",
+        "params": [{ "name": "player", "type": "Player" }],
+        "ret": "CFrame"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Players": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "UserSubscriptionStatusChanged",
+        "params": [
+          { "name": "user", "type": "Player" },
+          { "name": "subscriptionId", "type": "string" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "Plugin": {
+    "base_type": "Instance",
+    "children": {},
+    "tags": ["NotCreatable"]
+  },
+  "PluginAction": {
+    "base_type": "Instance",
+    "children": [
+      { "name": "Triggered {PluginSecurity}", "params": {}, "type": "Event" }
+    ],
+    "tags": ["NotReplicated"]
+  },
+  "PluginCapabilities": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Manifest",
+        "tags": ["{RobloxScriptSecurity}"],
+        "type": "string"
+      }
+    ],
+    "tags": {}
+  },
+  "PluginDebugService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "PluginDragEvent": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Sender",
+        "tags": ["[ReadOnly"],
+        "type": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "PluginGui": {
+    "base_type": "LayerCollector",
+    "children": [
+      {
+        "name": "WindowFocused {PluginSecurity}",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "PluginGuiService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "PluginManagementService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetAutoUpdate",
+        "params": [
+          { "name": "pluginId", "type": "int64" },
+          { "name": "state", "type": "bool" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "PluginManager": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "ExportSelection",
+        "params": [{ "name": "filePath", "type": "string" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "PluginManagerInterface": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "ExportSelection",
+        "params": [{ "name": "filePath", "type": "string" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "PluginMenu": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "ShowAsync {PluginSecurity}",
+        "params": {},
+        "ret": "Instance"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "PluginMouse": {
+    "base_type": "Mouse",
+    "children": [
+      {
+        "name": "DragEnter {PluginSecurity}",
+        "params": [{ "name": "instances", "type": "Objects" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "PluginPolicyService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetPluginPolicy",
+        "params": [{ "name": "pluginName", "type": "string" }],
+        "ret": "Dictionary"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "PluginToolbar": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "CreatePopupButton",
+        "params": [
+          { "name": "buttonId", "type": "string" },
+          { "name": "tooltip", "type": "string" },
+          { "name": "iconname", "type": "string" },
+          { "name": "text", "type": "string" }
+        ],
+        "ret": "Instance"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "PluginToolbarButton": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "DropdownClick {RobloxScriptSecurity}",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "PointLight": {
+    "base_type": "Light",
+    "children": [
+      { "kind": "Property", "name": "Range", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "PointsService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "PointsAwarded",
+        "params": [
+          { "name": "userId", "type": "int64" },
+          { "name": "pointsAwarded", "type": "int" },
+          { "name": "userBalanceInGame", "type": "int" },
+          { "name": "userTotalBalance", "type": "int" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "Deprecated"]
+  },
+  "PolicyService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetPolicyInfoForServerRobloxOnlyAsync {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "Dictionary"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Pose": {
+    "base_type": "PoseBase",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "RemoveSubPose",
+        "params": [{ "name": "pose", "type": "Instance" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "PoseBase": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Weight", "tags": {}, "type": "float" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "PostEffect": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Enabled", "tags": {}, "type": "bool" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "PrismaticConstraint": { "base_type": "SlidingBallConstraint", "tags": {} },
+  "ProcessInstancePhysicsService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "ProximityPrompt": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "TriggeredActionReplicated {RobloxSecurity}",
+        "params": [{ "name": "player", "type": "Instance" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "ProximityPromptService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "PromptTriggered",
+        "params": [
+          { "name": "prompt", "type": "ProximityPrompt" },
+          { "name": "playerWhoTriggered", "type": "Player" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["Service", "NotBrowsable"]
+  },
+  "PublishService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "PublishDescendantAssets",
+        "params": [{ "name": "instance", "type": "Instance" }],
+        "ret": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "QWidgetPluginGui": {
+    "base_type": "PluginGui",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "RayValue": {
+    "base_type": "ValueBase",
+    "children": [
+      {
+        "name": "Changed",
+        "params": [{ "name": "value", "type": "Ray" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "RbxAnalyticsService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "UpdateHeartbeatObject",
+        "params": [{ "name": "args", "type": "Dictionary" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "ReflectionMetadata": { "base_type": "Instance", "tags": {} },
+  "ReflectionMetadataCallbacks": { "base_type": "Instance", "tags": {} },
+  "ReflectionMetadataClass": {
+    "base_type": "ReflectionMetadataItem",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "ServiceVisibility",
+        "tags": ["{RobloxSecurity}", "[Hidden", "[NotReplicated"],
+        "type": "Enum.ServiceVisibility"
+      }
+    ],
+    "tags": {}
+  },
+  "ReflectionMetadataClasses": { "base_type": "Instance", "tags": {} },
+  "ReflectionMetadataEnum": {
+    "base_type": "ReflectionMetadataItem",
+    "tags": {}
+  },
+  "ReflectionMetadataEnumItem": {
+    "base_type": "ReflectionMetadataItem",
+    "tags": {}
+  },
+  "ReflectionMetadataEnums": { "base_type": "Instance", "tags": {} },
+  "ReflectionMetadataEvents": { "base_type": "Instance", "tags": {} },
+  "ReflectionMetadataFunctions": { "base_type": "Instance", "tags": {} },
+  "ReflectionMetadataItem": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "UINumTicks", "tags": {}, "type": "double" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "ReflectionMetadataMember": {
+    "base_type": "ReflectionMetadataItem",
+    "tags": {}
+  },
+  "ReflectionMetadataProperties": { "base_type": "Instance", "tags": {} },
+  "ReflectionMetadataYieldFunctions": { "base_type": "Instance", "tags": {} },
+  "ReflectionService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetPropertyNames",
+        "params": [{ "name": "name", "type": "string" }],
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "RemoteCursorService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "UpdateClientRemoteCursorPosition {RobloxSecurity}",
+        "params": [
+          { "name": "script", "type": "string" },
+          { "name": "remoteCursorPosition", "type": "string" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "RemoteDebuggerServer": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "RemoteEvent": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "OnServerEvent",
+        "params": [
+          { "name": "player", "type": "Player" },
+          { "name": "arguments", "type": "Tuple" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "RemoteFunction": { "base_type": "Instance", "children": {}, "tags": {} },
+  "RenderSettings": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetMaxQualityLevel",
+        "params": {},
+        "ret": "int"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotBrowsable"]
+  },
+  "RenderingTest": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "RenderdocTriggerCapture",
+        "params": {},
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "ReplicatedFirst": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "RemoveDefaultLoadingGuiSignal {RobloxScriptSecurity}",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "ReplicatedStorage": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "ReverbSoundEffect": {
+    "base_type": "SoundEffect",
+    "children": [
+      { "kind": "Property", "name": "WetLevel", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "RibbonNotificationService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "NewNotificationId {RobloxScriptSecurity}",
+        "params": [{ "name": "notificationId", "type": "string" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "RigidConstraint": { "base_type": "Constraint", "tags": {} },
+  "RobloxPluginGuiService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "RobloxReplicatedStorage": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotBrowsable"]
+  },
+  "RobloxServerStorage": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "RocketPropulsion": {
+    "base_type": "BodyMover",
+    "children": [
+      { "name": "ReachedTarget [Deprecated]", "params": {}, "type": "Event" }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "RodConstraint": {
+    "base_type": "Constraint",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "LimitsEnabled",
+        "tags": {},
+        "type": "bool"
+      }
+    ],
+    "tags": {}
+  },
+  "RomarkService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "RomarkEndOfTest {RobloxScriptSecurity} [Hidden]",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "RootImportData": {
+    "base_type": "BaseImportData",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "WorldUp",
+        "tags": {},
+        "type": "Enum.NormalId"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "RopeConstraint": {
+    "base_type": "Constraint",
+    "children": [
+      { "kind": "Property", "name": "WinchTarget", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "Rotate": { "base_type": "JointInstance", "tags": ["Deprecated"] },
+  "RotateP": { "base_type": "DynamicRotate", "tags": ["Deprecated"] },
+  "RotateV": { "base_type": "DynamicRotate", "tags": ["Deprecated"] },
+  "RotationCurve": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetKeys",
+        "params": [{ "name": "keys", "type": "Array" }],
+        "ret": "int"
+      }
+    ],
+    "tags": {}
+  },
+  "RtMessagingService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "RunService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "Stepped",
+        "params": [
+          { "name": "time", "type": "double" },
+          { "name": "deltaTime", "type": "double" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "RunningAverageItemDouble": {
+    "base_type": "StatsItem",
+    "tags": ["NotCreatable"]
+  },
+  "RunningAverageItemInt": {
+    "base_type": "StatsItem",
+    "tags": ["NotCreatable"]
+  },
+  "RunningAverageTimeIntervalItem": {
+    "base_type": "StatsItem",
+    "tags": ["NotCreatable"]
+  },
+  "RuntimeScriptService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "SafetyService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ScreenshotUploaded {RobloxScriptSecurity}",
+        "params": [
+          { "name": "screenshotJobId", "type": "int64" },
+          { "name": "screenshotId", "type": "string" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "ScreenGui": {
+    "base_type": "LayerCollector",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "IgnoreGuiInset",
+        "tags": ["[<📁>", "LoadOnly]"],
+        "type": "bool"
+      }
+    ],
+    "tags": {}
+  },
+  "ScreenshotHud": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Visible", "tags": {}, "type": "bool" }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "Script": {
+    "base_type": "BaseScript",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetHash {LocalUserSecurity}",
+        "params": {},
+        "ret": "string"
+      }
+    ],
+    "tags": {}
+  },
+  "ScriptBuilder": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "ScriptChangeService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ScriptSourceChanged {RobloxScriptSecurity}",
+        "params": [{ "name": "script", "type": "LuaSourceContainer" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ScriptCloneWatcher": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ScriptCloneWatcherHelper": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ScriptCommitService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ScriptContext": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ErrorDetailed",
+        "params": [
+          { "name": "message", "type": "string" },
+          { "name": "stackTrace", "type": "string" },
+          { "name": "script", "type": "Instance" },
+          { "name": "details", "type": "string" },
+          { "name": "securityLevel", "type": "int" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ScriptDebugger": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "WatchRemoved",
+        "params": [{ "name": "watch", "type": "Instance" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "ScriptDocument": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ViewportChanged {PluginSecurity}",
+        "params": [
+          { "name": "startLine", "type": "int64" },
+          { "name": "endLine", "type": "int64" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "ScriptEditorService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "TextDocumentDidOpen {PluginSecurity}",
+        "params": [{ "name": "newDocument", "type": "ScriptDocument" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ScriptRegistrationService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetSourceContainerByScriptGuid",
+        "params": [{ "name": "guid", "type": "string" }],
+        "ret": "LuaSourceContainer"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ScriptRuntime": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "ScriptService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "ScrollingFrame": {
+    "base_type": "GuiObject",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "ScrollToTop {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "Seat": {
+    "base_type": "Part",
+    "children": [
+      { "name": "RemoteDestroyeld [Hidden]", "params": {}, "type": "Event" }
+    ],
+    "tags": {}
+  },
+  "Selection": {
+    "base_type": "Instance",
+    "children": [{ "name": "hanged", "params": {}, "type": "Event" }],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "SelectionBox": {
+    "base_type": "InstanceAdornment",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "SurfaceTransparency",
+        "tags": {},
+        "type": "float"
+      }
+    ],
+    "tags": {}
+  },
+  "SelectionHighlightManager": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "SelectionLasso": {
+    "base_type": "GuiBase3d",
+    "children": [
+      { "kind": "Property", "name": "Humanoid", "tags": {}, "type": "Humanoid" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "SelectionPartLasso": {
+    "base_type": "SelectionLasso",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Part",
+        "tags": ["[Deprecated"],
+        "type": "BasePart"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "SelectionPointLasso": {
+    "base_type": "SelectionLasso",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Point",
+        "tags": ["[Deprecated"],
+        "type": "Vector3"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "SelectionSphere": {
+    "base_type": "PVAdornment",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "SurfaceTransparency",
+        "tags": {},
+        "type": "float"
+      }
+    ],
+    "tags": {}
+  },
+  "SensorBase": {
+    "base_type": "Instance",
+    "children": [
+      { "name": "OnSensorOutputChanged", "params": {}, "type": "Event" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "ServerReplicator": {
+    "base_type": "NetworkReplicator",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "ServerScriptService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "LoadStringEnabled",
+        "tags": ["[NotReplicated", "[NotScriptable"],
+        "type": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ServerStorage": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ServiceProvider": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ServiceRemoving",
+        "params": [{ "name": "service", "type": "Instance" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "ServiceVisibilityService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "HiddenServices",
+        "tags": ["{RobloxSecurity}"],
+        "type": "BinaryString"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "SessionService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetSession",
+        "params": [
+          { "name": "parentSid", "type": "string" },
+          { "name": "childSid", "type": "string" },
+          { "name": "tag", "type": "string" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "SharedTableRegistry": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetSharedTable",
+        "params": [
+          { "name": "name", "type": "string" },
+          { "name": "st", "type": "SharedTable?" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Shirt": {
+    "base_type": "Clothing",
+    "children": [
+      { "kind": "Property", "name": "emplate", "tags": {}, "type": "Content" }
+    ],
+    "tags": {}
+  },
+  "ShirtGraphic": {
+    "base_type": "CharacterAppearance",
+    "children": [
+      { "kind": "Property", "name": "Graphic", "tags": {}, "type": "Content" }
+    ],
+    "tags": {}
+  },
+  "ShorelineUpgraderService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "Status {RobloxScriptSecurity}",
+        "params": [{ "name": "progressRatio", "type": "float" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "SkateboardController": {
+    "base_type": "Controller",
+    "children": [
+      {
+        "name": "AxisChanged",
+        "params": [{ "name": "axis", "type": "string" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "SkateboardPlatform": {
+    "base_type": "Part",
+    "children": [
+      {
+        "name": "Unequipped [Deprecated]",
+        "params": [{ "name": "humanoid", "type": "Instance" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "Skin": {
+    "base_type": "CharacterAppearance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "olor",
+        "tags": ["[Deprecated"],
+        "type": "BrickColor"
+      }
+    ],
+    "tags": ["Deprecated"]
+  },
+  "Sky": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "SunTextureId",
+        "tags": {},
+        "type": "Content"
+      }
+    ],
+    "tags": {}
+  },
+  "SlidingBallConstraint": {
+    "base_type": "Constraint",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "LimitsEnabled",
+        "tags": {},
+        "type": "bool"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "Smoke": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "FastForward",
+        "params": [{ "name": "numFrames", "type": "int" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "SmoothVoxelsUpgraderService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "Status {RobloxScriptSecurity}",
+        "params": [{ "name": "progressRatio", "type": "float" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Snap": { "base_type": "JointInstance", "tags": ["Deprecated"] },
+  "SnippetService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "SocialService": {
+    "base_type": "Instance",
+    "children": {},
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "SolidModelContentProvider": {
+    "base_type": "CacheableContentProvider",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Sound": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "playbackActionSync {RobloxSecurity}",
+        "params": [{ "name": "action", "type": "int" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "SoundEffect": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Priority", "tags": {}, "type": "int" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "SoundGroup": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Volume", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "SoundService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "DeviceListChanged {RobloxScriptSecurity}",
+        "params": [{ "name": "newDevices", "type": "Tuple" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "Sparkles": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "FastForward",
+        "params": [{ "name": "numFrames", "type": "int" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "SpawnLocation": {
+    "base_type": "Part",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "TeamColor",
+        "tags": {},
+        "type": "BrickColor"
+      }
+    ],
+    "tags": {}
+  },
+  "SpawnerService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "SpecialMesh": {
+    "base_type": "FileMesh",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "MeshType",
+        "tags": {},
+        "type": "Enum.MeshType"
+      }
+    ],
+    "tags": {}
+  },
+  "SphereHandleAdornment": {
+    "base_type": "HandleAdornment",
+    "children": [
+      { "kind": "Property", "name": "Radius", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "SpotLight": {
+    "base_type": "Light",
+    "children": [
+      { "kind": "Property", "name": "Range", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "SpringConstraint": {
+    "base_type": "Constraint",
+    "children": [
+      { "kind": "Property", "name": "Stiffness", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "StackFrame": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Populated",
+        "tags": ["{RobloxScriptSecurity}", "[Hidden", "[ReadOnly"],
+        "type": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "StandalonePluginScripts": { "base_type": "Instance", "tags": {} },
+  "StandardPages": {
+    "base_type": "Pages",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "StarterCharacterScripts": {
+    "base_type": "StarterPlayerScripts",
+    "tags": ["NotCreatable"]
+  },
+  "StarterGear": { "base_type": "Instance", "tags": {} },
+  "StarterGui": {
+    "base_type": "BasePlayerGui",
+    "children": [
+      {
+        "name": "CoreGuiChangedSignal {RobloxScriptSecurity}",
+        "params": [
+          { "name": "coreGuiType", "type": "Enum.CoreGuiType" },
+          { "name": "enabled", "type": "bool" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "StarterPack": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "StarterPlayer": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "ClearDefaults {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "StarterPlayerScripts": { "base_type": "Instance", "tags": ["NotCreatable"] },
+  "Stats": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetTotalMemoryUsageMb",
+        "params": {},
+        "ret": "float"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "StatsItem": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetValueString {PluginSecurity}",
+        "params": {},
+        "ret": "string"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "Status": { "base_type": "Model", "tags": ["NotCreatable", "Deprecated"] },
+  "StopWatchReporter": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "StartTask",
+        "params": [
+          { "name": "reportName", "type": "string" },
+          { "name": "taskName", "type": "string" }
+        ],
+        "ret": "int"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "StreamingService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "Stream {RobloxScriptSecurity}",
+        "params": [
+          { "name": "requestId", "type": "string" },
+          { "name": "streamContent", "type": "string" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "StringValue": {
+    "base_type": "ValueBase",
+    "children": [
+      {
+        "name": "Changed",
+        "params": [{ "name": "value", "type": "string" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "Studio": {
+    "base_type": "Instance",
+    "children": [
+      { "name": "ThemeChanged {PluginSecurity}", "params": {}, "type": "Event" }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "StudioAssetService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "OnSaveToRoblox {RobloxScriptSecurity}",
+        "params": [
+          { "name": "instances", "type": "Objects" },
+          { "name": "assetType", "type": "Variant" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "StudioAttachment": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "TargetAnchorPoint",
+        "tags": {},
+        "type": "Vector2"
+      }
+    ],
+    "tags": ["NotReplicated"]
+  },
+  "StudioCallout": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetOnNextClicked",
+        "params": [{ "name": "onClick", "type": "Function" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotReplicated"]
+  },
+  "StudioData": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "EnableScriptCollabByDefaultOnLoad",
+        "tags": ["{RobloxScriptSecurity}", "[Hidden"],
+        "type": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "StudioDeviceEmulatorService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "TouchPositionsChanged {RobloxScriptSecurity}",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "StudioObjectBase": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "StudioPublishService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "OnSaveOrPublishPlaceToRoblox",
+        "params": [
+          { "name": "showGameSelect", "type": "bool" },
+          { "name": "isPublish", "type": "bool" },
+          { "name": "closeMode", "type": "Enum.StudioCloseMode" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "StudioScriptDebugEventListener": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "StudioSdkService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetSdk",
+        "params": [{ "name": "sdk", "type": "Instance" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "StudioService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "SaveLocallyAsComplete {RobloxScriptSecurity}",
+        "params": [{ "name": "success", "type": "bool" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "StudioTheme": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetColor",
+        "params": [
+          { "name": "styleguideitem", "type": "Enum.StudioStyleGuideColor" },
+          { "name": "modifier", "type": "Enum.StudioStyleGuideModifier" }
+        ],
+        "ret": "Color3"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "StudioWidget": {
+    "base_type": "StudioObjectBase",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetFixedSize",
+        "params": [
+          { "name": "width", "type": "int" },
+          { "name": "height", "type": "int" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "StudioWidgetsService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "HideSpotlight {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "StyleBase": {
+    "base_type": "Instance",
+    "children": [
+      { "name": "StyleRulesChanged", "params": {}, "type": "Event" }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "StyleDerive": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "StyleSheet",
+        "tags": {},
+        "type": "StyleSheet"
+      }
+    ],
+    "tags": {}
+  },
+  "StyleLink": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "StyleSheet",
+        "tags": {},
+        "type": "StyleSheet"
+      }
+    ],
+    "tags": {}
+  },
+  "StyleRule": {
+    "base_type": "StyleBase",
+    "children": [
+      {
+        "name": "ropertyChanged {RobloxScriptSecurity}",
+        "params": [{ "name": "styleProperty", "type": "string" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "StyleSheet": {
+    "base_type": "StyleBase",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetDerives",
+        "params": [{ "name": "derives", "type": "Objects" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "StylingService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetStyleSheetInfo",
+        "params": [{ "name": "styleSheet", "type": "StyleSheet" }],
+        "ret": "Dictionary"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "SunRaysEffect": {
+    "base_type": "PostEffect",
+    "children": [
+      { "kind": "Property", "name": "Spread", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "SurfaceAppearance": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "TexturePack",
+        "tags": ["{RobloxSecurity}"],
+        "type": "Content"
+      }
+    ],
+    "tags": {}
+  },
+  "SurfaceGui": {
+    "base_type": "SurfaceGuiBase",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "SizingMode",
+        "tags": {},
+        "type": "Enum.SurfaceGuiSizingMode"
+      }
+    ],
+    "tags": {}
+  },
+  "SurfaceGuiBase": {
+    "base_type": "LayerCollector",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Face",
+        "tags": {},
+        "type": "Enum.NormalId"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "SurfaceLight": {
+    "base_type": "Light",
+    "children": [
+      { "kind": "Property", "name": "Range", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "SurfaceSelection": {
+    "base_type": "PartAdornment",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "TargetSurface",
+        "tags": {},
+        "type": "Enum.NormalId"
+      }
+    ],
+    "tags": {}
+  },
+  "SwimController": {
+    "base_type": "ControllerBase",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "AccelerationTime",
+        "tags": {},
+        "type": "float"
+      }
+    ],
+    "tags": {}
+  },
+  "SyncScriptBuilder": {
+    "base_type": "ScriptBuilder",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "RawBytecode",
+        "tags": ["[Deprecated"],
+        "type": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "TaskScheduler": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "ThreadPoolSize",
+        "tags": ["[ReadOnly"],
+        "type": "int"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "Team": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "PlayerRemoved",
+        "params": [{ "name": "player", "type": "Player" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "TeamCreateData": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "InitialCameraCFrame",
+        "tags": ["{RobloxSecurity}", "[Hidden", "[NotScriptable"],
+        "type": "CFrame"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "TeamCreatePublishService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "TeamCreateSaveResult",
+        "params": [
+          { "name": "saveSuccessful", "type": "bool" },
+          { "name": "statusCode", "type": "int" },
+          { "name": "errMessage", "type": "string" },
+          { "name": "rawMessage", "type": "string" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "TeamCreateService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ToggleManageCollaborators {RobloxScriptSecurity}",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Teams": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "RebalanceTeams [Deprecated]",
+        "params": {},
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "TeleportAsyncResult": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "ReservedServerAccessCode",
+        "tags": ["[ReadOnly"],
+        "type": "string"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "TeleportOptions": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetTeleportData",
+        "params": [{ "name": "teleportData", "type": "Variant" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "TeleportService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "TeleportInitFailedInternal",
+        "params": [
+          { "name": "player", "type": "Instance" },
+          { "name": "teleportResult", "type": "Enum.TeleportResult" },
+          { "name": "errorMessage", "type": "string" },
+          { "name": "guid", "type": "string" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "TemporaryCageMeshProvider": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "TemporaryScriptService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Terrain": {
+    "base_type": "BasePart",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "WriteVoxels",
+        "params": [
+          { "name": "region", "type": "Region3" },
+          { "name": "resolution", "type": "float" },
+          { "name": "materials", "type": "Array" },
+          { "name": "occupancy", "type": "Array" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "TerrainDetail": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "TexturePack",
+        "tags": ["[Hidden", "[NotScriptable"],
+        "type": "Content"
+      }
+    ],
+    "tags": {}
+  },
+  "TerrainRegion": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetRegionWireframe {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "Array"
+      }
+    ],
+    "tags": {}
+  },
+  "TestService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ServerCollectResult",
+        "params": [
+          { "name": "text", "type": "string" },
+          { "name": "script", "type": "Instance" },
+          { "name": "line", "type": "int" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["Service"]
+  },
+  "TextBox": {
+    "base_type": "GuiObject",
+    "children": [
+      {
+        "name": "ReturnPressedFromOnScreenKeyboard",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "TextBoxService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "TextButton": {
+    "base_type": "GuiButton",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetTextFromInput",
+        "params": [{ "name": "text", "type": "string" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "TextChannel": { "base_type": "Instance", "children": {}, "tags": {} },
+  "TextChatCommand": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "Triggered",
+        "params": [
+          { "name": "originTextSource", "type": "TextSource" },
+          { "name": "unfilteredText", "type": "string" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "TextChatConfigurations": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "TextChatMessage": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Translation",
+        "tags": {},
+        "type": "string"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "TextChatMessageProperties": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Translation",
+        "tags": {},
+        "type": "string"
+      }
+    ],
+    "tags": {}
+  },
+  "TextChatService": {
+    "base_type": "Instance",
+    "children": {},
+    "tags": ["NotCreatable", "Service"]
+  },
+  "TextFilterResult": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetNonChatStringForUserAsync",
+        "params": [{ "name": "toUserId", "type": "int64" }],
+        "ret": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "TextFilterTranslatedResult": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetTranslations",
+        "params": {},
+        "ret": "Dictionary"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "TextLabel": {
+    "base_type": "GuiLabel",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetTextFromInput",
+        "params": [{ "name": "text", "type": "string" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "TextService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetResolutionScale",
+        "params": [{ "name": "scale", "type": "float" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "TextSource": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "UserIdReplicated",
+        "tags": ["[Hidden", "[NotScriptable"],
+        "type": "int64"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "Texture": {
+    "base_type": "Decal",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "StudsPerTileV",
+        "tags": {},
+        "type": "float"
+      }
+    ],
+    "tags": {}
+  },
+  "ThirdPartyUserService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ActiveUserSignedOut {RobloxScriptSecurity}",
+        "params": [{ "name": "signOutStatus", "type": "int" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "ThreadState": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetFrame",
+        "params": [{ "name": "index", "type": "int" }],
+        "ret": "Instance"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "TimerService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "ToastNotificationService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "ShowNotification",
+        "params": [
+          { "name": "message", "type": "string" },
+          { "name": "notificationId", "type": "string" }
+        ],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Tool": {
+    "base_type": "BackpackItem",
+    "children": [
+      {
+        "name": "VRLaserPointerClicked {RobloxSecurity}",
+        "params": [{ "name": "player", "type": "Player" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "Torque": {
+    "base_type": "Constraint",
+    "children": [
+      { "kind": "Property", "name": "Torque", "tags": {}, "type": "Vector3" }
+    ],
+    "tags": {}
+  },
+  "TorsionSpringConstraint": {
+    "base_type": "Constraint",
+    "children": [
+      { "kind": "Property", "name": "Stiffness", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "TotalCountTimeIntervalItem": {
+    "base_type": "StatsItem",
+    "tags": ["NotCreatable"]
+  },
+  "TouchInputService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "TouchTransmitter": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "TracerService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "StartSpan",
+        "params": [
+          { "name": "name", "type": "string" },
+          { "name": "parentId", "type": "string" }
+        ],
+        "ret": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "TrackerLodController": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "UpdateState {RobloxScriptSecurity}",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "TrackerStreamAnimation": {
+    "base_type": "Instance",
+    "tags": ["NotReplicated"]
+  },
+  "Trail": {
+    "base_type": "Instance",
+    "children": [
+      { "name": "OnClearRequested [Hidden]", "params": {}, "type": "Event" }
+    ],
+    "tags": {}
+  },
+  "Translator": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "Translate",
+        "params": [
+          { "name": "context", "type": "Instance" },
+          { "name": "text", "type": "string" }
+        ],
+        "ret": "string"
+      }
+    ],
+    "tags": ["NotCreatable", "NotReplicated"]
+  },
+  "TremoloSoundEffect": {
+    "base_type": "SoundEffect",
+    "children": [
+      { "kind": "Property", "name": "Frequency", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "TriangleMeshPart": {
+    "base_type": "BasePart",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "PhysicalConfigData",
+        "tags": ["{RobloxSecurity}", "[Hidden", "[NotScriptable"],
+        "type": "SharedString"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "TrussPart": {
+    "base_type": "BasePart",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Style",
+        "tags": ["[<📁>", "LoadOnly]", "[NotReplicated"],
+        "type": "Enum.Style"
+      }
+    ],
+    "tags": {}
+  },
+  "TutorialService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "ShowWidgets",
+        "params": [{ "name": "commaSeparatedNames", "type": "string" }],
+        "ret": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "Tween": {
+    "base_type": "TweenBase",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "nfo",
+        "tags": ["[ReadOnly"],
+        "type": "TweenInfo"
+      }
+    ],
+    "tags": {}
+  },
+  "TweenBase": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "Completed",
+        "params": [{ "name": "playbackState", "type": "Enum.PlaybackState" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "TweenService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetValue",
+        "params": [
+          { "name": "alpha", "type": "float" },
+          { "name": "easingStyle", "type": "Enum.EasingStyle" },
+          { "name": "easingDirection", "type": "Enum.EasingDirection" }
+        ],
+        "ret": "float"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "UGCAvatarService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "UGCValidationService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "ValidateUniqueUVCount",
+        "params": [
+          { "name": "meshId", "type": "string" },
+          { "name": "numRequired", "type": "int" }
+        ],
+        "ret": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "UIAspectRatioConstraint": {
+    "base_type": "UIConstraint",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "DominantAxis",
+        "tags": {},
+        "type": "Enum.DominantAxis"
+      }
+    ],
+    "tags": {}
+  },
+  "UIBase": { "base_type": "Instance", "tags": ["NotCreatable"] },
+  "UIComponent": { "base_type": "UIBase", "tags": ["NotCreatable"] },
+  "UIConstraint": { "base_type": "UIComponent", "tags": ["NotCreatable"] },
+  "UICorner": {
+    "base_type": "UIComponent",
+    "children": [
+      { "kind": "Property", "name": "CornerRadius", "tags": {}, "type": "UDim" }
+    ],
+    "tags": {}
+  },
+  "UIFlexItem": {
+    "base_type": "UIComponent",
+    "children": [
+      { "kind": "Property", "name": "ShrinkRatio", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "UIGradient": {
+    "base_type": "UIComponent",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Transparency",
+        "tags": {},
+        "type": "NumberSequence"
+      }
+    ],
+    "tags": {}
+  },
+  "UIGridLayout": {
+    "base_type": "UIGridStyleLayout",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "AbsoluteCellSize",
+        "tags": ["[ReadOnly", "{🧬Unsafe}"],
+        "type": "Vector2"
+      }
+    ],
+    "tags": {}
+  },
+  "UIGridStyleLayout": {
+    "base_type": "UILayout",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetCustomSortFunction",
+        "params": [{ "name": "function", "type": "Function" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "NotBrowsable"]
+  },
+  "UILayout": { "base_type": "UIComponent", "tags": ["NotCreatable"] },
+  "UIListLayout": {
+    "base_type": "UIGridStyleLayout",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "VerticalPadding",
+        "tags": ["[<📁>", "LoadOnly]", "[Hidden", "[NotScriptable"],
+        "type": "UDim"
+      }
+    ],
+    "tags": {}
+  },
+  "UIPadding": {
+    "base_type": "UIComponent",
+    "children": [
+      { "kind": "Property", "name": "PaddingTop", "tags": {}, "type": "UDim" }
+    ],
+    "tags": {}
+  },
+  "UIPageLayout": {
+    "base_type": "UIGridStyleLayout",
+    "children": [
+      {
+        "name": "Stopped",
+        "params": [{ "name": "currentPage", "type": "Instance" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "UIScale": {
+    "base_type": "UIComponent",
+    "children": [
+      { "kind": "Property", "name": "Scale", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "UISizeConstraint": {
+    "base_type": "UIConstraint",
+    "children": [
+      { "kind": "Property", "name": "MinSize", "tags": {}, "type": "Vector2" }
+    ],
+    "tags": {}
+  },
+  "UIStroke": {
+    "base_type": "UIComponent",
+    "children": [
+      { "kind": "Property", "name": "Enabled", "tags": {}, "type": "bool" }
+    ],
+    "tags": {}
+  },
+  "UITableLayout": {
+    "base_type": "UIGridStyleLayout",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "MajorAxis",
+        "tags": {},
+        "type": "Enum.TableMajorAxis"
+      }
+    ],
+    "tags": {}
+  },
+  "UITextSizeConstraint": {
+    "base_type": "UIConstraint",
+    "children": [
+      { "kind": "Property", "name": "MinTextSize", "tags": {}, "type": "int" }
+    ],
+    "tags": {}
+  },
+  "UnionOperation": { "base_type": "PartOperation", "tags": {} },
+  "UniversalConstraint": {
+    "base_type": "Constraint",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "LimitsEnabled",
+        "tags": {},
+        "type": "bool"
+      }
+    ],
+    "tags": {}
+  },
+  "UnvalidatedAssetService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "UpgradeTempAssetId",
+        "params": [
+          { "name": "userId", "type": "int64" },
+          { "name": "tempId", "type": "int64" },
+          { "name": "assetId", "type": "int64" }
+        ],
+        "ret": "bool"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "UserGameSettings": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "StudioModeChanged",
+        "params": [{ "name": "isStudioMode", "type": "bool" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "UserSettings"]
+  },
+  "UserInputService": {
+    "base_type": "Instance",
+    "children": [{ "name": "WindowFocused", "params": {}, "type": "Event" }],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "UserNotification": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Payload",
+        "tags": {},
+        "type": "UserNotificationPayload"
+      }
+    ],
+    "tags": {}
+  },
+  "UserNotificationPayload": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SetParameters",
+        "params": [{ "name": "parameters", "type": "Variant" }],
+        "ret": "void"
+      }
+    ],
+    "tags": {}
+  },
+  "UserNotificationPayloadAnalyticsData": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "Category", "tags": {}, "type": "string" }
+    ],
+    "tags": {}
+  },
+  "UserNotificationPayloadJoinExperience": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Property", "name": "LaunchData", "tags": {}, "type": "string" }
+    ],
+    "tags": {}
+  },
+  "UserNotificationPayloadParameterValue": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "StringValue",
+        "tags": {},
+        "type": "string"
+      }
+    ],
+    "tags": {}
+  },
+  "UserService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "GetUserInfosByUserIdsAsync",
+        "params": [{ "name": "userIds", "type": "Array" }],
+        "ret": "Array"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "UserSettings": {
+    "base_type": "GenericSettings",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "SaveState {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "UserStorageService": {
+    "base_type": "LocalStorageService",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "VRService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "UserCFrameEnabled",
+        "params": [
+          { "name": "type", "type": "Enum.UserCFrame" },
+          { "name": "enabled", "type": "bool" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "VRStatusService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "ValueBase": { "base_type": "Instance", "tags": ["NotCreatable"] },
+  "Vector3Curve": {
+    "base_type": "Instance",
+    "children": [
+      { "kind": "Function", "name": "Z", "params": {}, "ret": "FloatCurve" }
+    ],
+    "tags": {}
+  },
+  "Vector3Value": {
+    "base_type": "ValueBase",
+    "children": [
+      {
+        "name": "Changed",
+        "params": [{ "name": "value", "type": "Vector3" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "VectorForce": {
+    "base_type": "Constraint",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "RelativeTo",
+        "tags": {},
+        "type": "Enum.ActuatorRelativeTo"
+      }
+    ],
+    "tags": {}
+  },
+  "VehicleController": { "base_type": "Controller", "tags": {} },
+  "VehicleSeat": {
+    "base_type": "BasePart",
+    "children": [
+      {
+        "name": "RemoteDestroySeatWeld [Hidden]",
+        "params": {},
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "VelocityMotor": {
+    "base_type": "JointInstance",
+    "children": [
+      { "kind": "Property", "name": "MaxVelocity", "tags": {}, "type": "float" }
+    ],
+    "tags": {}
+  },
+  "VersionControlService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "ScriptStopEdit {LocalUserSecurity}",
+        "params": [{ "name": "scriptGuid", "type": "string" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "VideoCaptureService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "Stopped {RobloxScriptSecurity}",
+        "params": [{ "name": "cameraid", "type": "string" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "VideoFrame": {
+    "base_type": "GuiObject",
+    "children": [
+      {
+        "name": "TimePositionUpdatedFromServer {RobloxSecurity}",
+        "params": [{ "name": "value", "type": "double" }],
+        "type": "Event"
+      }
+    ],
+    "tags": {}
+  },
+  "VideoService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "ViewportFrame": {
+    "base_type": "GuiObject",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "CaptureSnapshotAsync {RobloxScriptSecurity}",
+        "params": {},
+        "ret": "Content"
+      }
+    ],
+    "tags": {}
+  },
+  "VirtualInputManager": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "RecordingCompleted {RobloxScriptSecurity}",
+        "params": [{ "name": "result", "type": "string" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["Service"]
+  },
+  "VirtualUser": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "TypeKey",
+        "params": [{ "name": "key", "type": "string" }],
+        "ret": "void"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "VisibilityCheckDispatcher": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "VisibilityService": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service"]
+  },
+  "Visit": {
+    "base_type": "Instance",
+    "tags": ["NotCreatable", "Service", "NotReplicated"]
+  },
+  "VoiceChatInternal": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "StateChanged [Deprecated]",
+        "params": [
+          { "name": "old", "type": "Enum.VoiceChatState" },
+          { "name": "new", "type": "Enum.VoiceChatState" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service", "NotBrowsable"]
+  },
+  "VoiceChatService": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "name": "VoiceSetupFailed",
+        "params": [
+          { "name": "voiceControlPath", "type": "Enum.VoiceControlPath" },
+          { "name": "serializedFailure", "type": "string" },
+          { "name": "sessionId", "type": "string" }
+        ],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "WedgePart": { "base_type": "FormFactorPart", "tags": {} },
+  "Weld": { "base_type": "JointInstance", "tags": {} },
+  "WeldConstraint": {
+    "base_type": "Instance",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "Part1Internal",
+        "tags": ["[Hidden", "[NotScriptable"],
+        "type": "BasePart"
+      }
+    ],
+    "tags": {}
+  },
+  "Wire": { "base_type": "Instance", "children": {}, "tags": ["NotBrowsable"] },
+  "WireframeHandleAdornment": {
+    "base_type": "HandleAdornment",
+    "children": [
+      { "kind": "Function", "name": "Clear", "params": {}, "ret": "void" }
+    ],
+    "tags": {}
+  },
+  "Workspace": {
+    "base_type": "WorldRoot",
+    "children": [
+      {
+        "name": "PersistentLoaded",
+        "params": [{ "name": "player", "type": "Player" }],
+        "type": "Event"
+      }
+    ],
+    "tags": ["NotCreatable", "Service"]
+  },
+  "WorldModel": { "base_type": "WorldRoot", "tags": {} },
+  "WorldRoot": {
+    "base_type": "Model",
+    "children": [
+      {
+        "kind": "Function",
+        "name": "Spherecast",
+        "params": [
+          { "name": "position", "type": "Vector3" },
+          { "name": "radius", "type": "float" },
+          { "name": "direction", "type": "Vector3" },
+          { "name": "params", "type": "RaycastParams" }
+        ],
+        "ret": "RaycastResult"
+      }
+    ],
+    "tags": ["NotCreatable"]
+  },
+  "WrapLayer": {
+    "base_type": "BaseWrap",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "ShrinkFactor",
+        "tags": ["{✏️PluginSecurity}"],
+        "type": "float"
+      }
+    ],
+    "tags": {}
+  },
+  "WrapTarget": {
+    "base_type": "BaseWrap",
+    "children": [
+      {
+        "kind": "Property",
+        "name": "DebugMode",
+        "tags": ["[NotReplicated", "[NotScriptable"],
+        "type": "Enum.WrapTargetDebugMode"
+      }
+    ],
+    "tags": {}
+  }
+}

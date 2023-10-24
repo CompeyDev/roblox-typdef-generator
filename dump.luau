@@ -127,7 +127,9 @@ function parse_dump(path: string)
 		if tokens[1] == "Enum" then
 			local enum_name = tokens[2]
 
-			parsed[enum_name .. `\{{tokens[1]}\}`] = {}
+			parsed[enum_name .. `\{{tokens[1]}\}`] = {
+				kind = tokens[1],
+			}
 
 			parent_node = enum_name
 		end
